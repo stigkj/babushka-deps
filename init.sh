@@ -8,8 +8,8 @@ set -e
 home=$(sh -c "echo ~$(whoami)")
 : ${me:=$(whoami)}
 
-from="https://$me@github.com/stigkj/babushka-my-machines.git
-to="$home/dev/mine/babushka-my-machines
+from="https://$me@github.com/stigkj/babushka-my-machines.git"
+to="$home/dev/mine/babushka-my-machines"
 
 interactive=$([ -t 0 ] && echo 'true' || echo 'false')
 
