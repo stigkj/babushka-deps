@@ -1,0 +1,1 @@
+dep 'path-finder.cask', :for => :osx
