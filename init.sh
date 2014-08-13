@@ -174,15 +174,15 @@ on_clone_failure() {
   false
 }
 
-setup_devenv() {
-  $to/tools/init/setup-devenv.sh
+setup() {
+  $to/tools/init/setup.sh
 }
 
 do_bootstrap() {
   install_pkgs_if_required &&
   clone_ &&
   on_clone_success || on_clone_failure &&
-  setup_devenv
+  setup
 }
 
 main() {
