@@ -180,7 +180,7 @@ setup_devenv() {
 
 do_bootstrap() {
   install_pkgs_if_required &&
-  clone_travelapp &&
+  clone_ &&
   on_clone_success || on_clone_failure &&
   setup_devenv
 }
