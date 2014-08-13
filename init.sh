@@ -175,7 +175,7 @@ on_clone_failure() {
 }
 
 setup() {
-  $to/tools/init/setup.sh
+  $to/setup.sh
 }
 
 do_bootstrap() {
