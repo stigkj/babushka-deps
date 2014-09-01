@@ -10,8 +10,7 @@ install_babushka() {
   echo "Installing babushka..."
   echo ""
 
-  # Need a version which supports Ubuntu 14.04
-  sudo sh -c "`curl https://babushka.me/up/83cd1aa`" < /dev/null
+  sudo sh -c "`curl https://babushka.me/up`" < /dev/null
 }
 
 install_babushka_if_missing() {
