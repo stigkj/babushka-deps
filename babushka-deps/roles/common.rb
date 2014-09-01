@@ -1,3 +1,3 @@
 dep 'common' do
-  requires 'common_development', 'common_media', 'common_network'
+  requires 'common development', 'common media', 'common network', 'common utilities', 'common hacks'
 end

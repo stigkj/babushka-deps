@@ -1,2 +1,2 @@
-dep 'Linux', :for => :linux do
+dep 'Linux development', :for => :linux do
 end

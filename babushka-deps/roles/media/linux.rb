@@ -1,2 +1,2 @@
-dep 'Linux', :for => :linux do
+dep 'Linux media', :for => :linux do
 end
