@@ -54,13 +54,8 @@ install_pkgs() {
 logo() {
 cat <<"LOGO"
 
-Something other - babushka-my-machines
-,--,--'               .       ,.
-`- | ,-. ,-. .  , ,-. |      / |   ,-. ,-.
- , | |   ,-| | /  |-' |     /~~|-. | | | |
- `-' '   `-^ `'   `-' `'  ,'   `-' |-' |-'
-                                   |   |
-                                   '   '
+<some logo here - babushka-my-machines>
+
 LOGO
 }
 
