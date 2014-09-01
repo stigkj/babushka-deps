@@ -1,3 +1,5 @@
+# TODO install Java versions through something like this:
+# requires 'Java'.with(:version => 8)
 dep 'Java 8' do
   requires {
     on :osx, 'java.cask'
