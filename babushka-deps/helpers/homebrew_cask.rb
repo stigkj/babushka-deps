@@ -5,7 +5,7 @@
 
 # Installs Homebrew Cask
 dep 'brew-cask', :for => :osx do
-  requires 'homebrew'
+  requires Babushka::BrewHelper.manager_dep
 
   met? { CaskHelper.present? }
   meet { `brew install caskroom/cask/brew-cask` }

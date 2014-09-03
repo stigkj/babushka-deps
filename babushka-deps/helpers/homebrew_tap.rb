@@ -8,7 +8,7 @@
 # by Homebrew to install software). This dep ensures a particular tap
 # has been added to Homebrew.
 dep 'homebrew tap', :tap_name, :for => :osx do
-  requires 'homebrew'
+  requires Babushka::BrewHelper.manager_dep
 
   # Retrieves a list of all existing (tapped) taps
   #
