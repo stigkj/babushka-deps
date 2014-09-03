@@ -7,7 +7,7 @@ dep 'Java 7' do
 end
 
 dep 'java7.cask', :for => :osx do
-  requires 'homebrew tap'.with('caskroom/versions')
+  requires 'homebrew tap for caskroom versions'
 end
 
 dep 'oracle-java7-installer.managed', :for => :apt do
