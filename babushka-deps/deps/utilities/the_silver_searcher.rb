@@ -1,0 +1,1 @@
+dep 'the_silver_searcher.managed'
