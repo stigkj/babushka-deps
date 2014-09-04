@@ -6,8 +6,15 @@ meta :osx_defaults do
 
   template do
     met? {
-      status = `defaults read #{domain} #{key}`.strip
-      status == value
+      status = shell? "defaults read #{domain} #{key}".strip
+      mapped_value = value
+
+      if type == 'bool'
+        lookup_table = {'true' => '1', 'false' => '0', '1' => '1', '0' => '0'}
+        mapped_value = lookup_table[value]
+      end
+
+      status == mapped_value
     }
     
     meet {
@@ -15,6 +22,7 @@ meta :osx_defaults do
     }
   end
 end
+
 
 dep "dashboard.osx_defaults" do
   setting "com.apple.dashboard mcx-disabled"
