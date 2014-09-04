@@ -1,3 +1,5 @@
+require 'date'
+
 dep 'OS X hacks', :for => :osx do
   requires 'Allow text selection in QuickLook.osx_defaults',
            'Automatically hide and show the Dock.osx_defaults',
@@ -5,7 +7,7 @@ dep 'OS X hacks', :for => :osx do
            'Disable menu bar transparency.osx_defaults',
            "Disable iPhone-style 'natural' scrolling.osx_defaults",
            'Disable warning when changing file extension.osx_defaults',
-           "Display full POSIX path in Finder's window title",
+           "Display full POSIX path in Finder's window title.osx_defaults",
            'Enable access for assistive devices',
            'Fix hostname-through-DHCP bug',
            'Remove auto-hiding Dock delay.osx_defaults',
@@ -15,5 +17,14 @@ dep 'OS X hacks', :for => :osx do
            'Show path bar in Finder.osx_defaults',
            'Show status bar in Finder.osx_defaults',
            'Show unsupported network volumes in TimeMachine.osx_defaults',
-           'Use function keys as function keys'
+           'Use function keys as function keys.osx_defaults'
+
+  met? { "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p.exists? }
+  meet {
+    shell 'killall Finder'
+    shell 'killall Dock'
+    shell 'killall SystemUIServer'
+
+    "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p.touch
+  }    
 end
