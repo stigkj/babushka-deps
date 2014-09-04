@@ -1,16 +1,17 @@
 meta :osx_defaults do
-  accepts_value_for :setting
+  accepts_value_for :domain
+  accepts_value_for :key
   accepts_value_for :type
   accepts_value_for :value
 
   template do
     met? {
-      status = `defaults read #{setting}`.strip
+      status = `defaults read #{domain} #{key}`.strip
       status == value
     }
     
     meet {
-      shell "defaults write #{setting} -#{type} #{value}"
+      shell "defaults write #{domain} #{key} -#{type} #{value}"
     }
   end
 end
