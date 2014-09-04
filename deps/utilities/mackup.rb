@@ -12,5 +12,3 @@ end
 dep 'Make sure mackup backup or restore is run before continuing' do
   meet { Babushka::Prompt.confirm('Run mackup backup or restore now in another shell before pressing enter', :default => 'y') }
 end
-
-#TODO use HEAD version, seems options to brew install is possible
