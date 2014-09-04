@@ -1,7 +1,8 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
   requires 'zsh.managed',
-    'tig.managed',
-    'Light Table',
-    'VirtualBox'
+           'tig.managed',
+           'Light Table',
+           'Beyond Compare',
+           'VirtualBox'
 end
