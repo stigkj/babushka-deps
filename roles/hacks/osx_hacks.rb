@@ -17,7 +17,9 @@ dep 'OS X hacks', :for => :osx do
            'Show path bar in Finder.osx_defaults',
            'Show status bar in Finder.osx_defaults',
            'Show unsupported network volumes in TimeMachine.osx_defaults',
-           'Use function keys as function keys.osx_defaults'
+           'Use function keys as function keys.osx_defaults',
+           'Enable full keyboard access for all controls.osx_defaults'
+  #TODO change keyboard shortcuts for Alfred and Spotlight
 
   met? { "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p.exists? }
   meet {
