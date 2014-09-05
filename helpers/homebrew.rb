@@ -19,7 +19,7 @@ dep 'repo.setup_upstream_in_my_forked_homebrew' do
 end
 
 dep 'repo.my_forked_homebrew' do
-  requires_when_unmet 'writable.fhs'.with(path), 'git'
+  requires_when_unmet 'writable.fhs'.with(path), 'fix world writable usr_local', 'git'
   met? {
     if repo.exists? && !repo.include?('29d85578e75170a6c0eaebda4d701b46f1acf446')
       unmeetable! "There is a non-homebrew repo at #{path}."
@@ -32,6 +32,11 @@ dep 'repo.my_forked_homebrew' do
       log_shell "Gitifying #{path}", "cp -r .git '#{path}'"
     end
   }
+end
+
+dep 'fix world writable usr_local' do
+  met? { !path.p.world_writable? }
+  meet { log_shell 'Fixing world writable usr/local', "chmod o-w #{path}", :sudo => true }
 end
 
 def path
