@@ -21,12 +21,16 @@ dep 'OS X hacks', :for => :osx do
            'Enable full keyboard access for all controls.osx_defaults'
   #TODO change keyboard shortcuts for Alfred and Spotlight
 
-  met? { "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p.exists? }
+  met? { marker_file.exists? }
   meet {
     shell 'killall Finder'
     shell 'killall Dock'
     shell 'killall SystemUIServer'
 
-    "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p.touch
-  }    
+    marker_file.touch
+  }
+end
+
+def marker_file
+  "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p
 end
