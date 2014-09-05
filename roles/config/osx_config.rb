@@ -1,7 +1,8 @@
 require 'date'
 
 dep 'OS X config', :for => :osx do
-  requires 'Allow text selection in QuickLook.osx_defaults',
+  requires 'Setup shell',
+           'Allow text selection in QuickLook.osx_defaults',
            'Automatically hide and show the Dock.osx_defaults',
            'Avoid creating .DS_Store files on network volumes.osx_defaults',
            'Disable menu bar transparency.osx_defaults',
