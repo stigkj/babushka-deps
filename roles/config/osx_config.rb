@@ -19,7 +19,8 @@ dep 'OS X config', :for => :osx do
            'Show status bar in Finder.osx_defaults',
            'Show unsupported network volumes in TimeMachine.osx_defaults',
            'Use function keys as function keys.osx_defaults',
-           'Enable full keyboard access for all controls.osx_defaults'
+           'Enable full keyboard access for all controls.osx_defaults',
+           'Disable Dashboard from running.osx_defaults',
   #TODO change keyboard shortcuts for Alfred and Spotlight
 
   met? { marker_file.exists? }
