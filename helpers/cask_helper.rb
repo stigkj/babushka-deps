@@ -1,5 +1,6 @@
 # A PkgHelper for managing Homebrew Cask packages
-class CaskHelper < Babushka::BrewHelper
+module Babushka
+  class CaskHelper < BrewHelper
   class << self
     def pkg_type; :cask end
     def pkg_binary; 'brew' end
@@ -62,8 +63,8 @@ class CaskHelper < Babushka::BrewHelper
     def caskroom
       "/opt/homebrew-cask/Caskroom".p
     end
-
+  end
   end
 end
 
-Babushka::PkgHelper.all_manager_keys << CaskHelper.manager_key
+Babushka::PkgHelper.all_manager_keys << Babushka::CaskHelper.manager_key

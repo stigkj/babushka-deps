@@ -7,6 +7,6 @@
 dep 'brew-cask', :for => :osx do
   requires Babushka::BrewHelper.manager_dep
 
-  met? { CaskHelper.present? }
+  met? { Babushka::CaskHelper.present? }
   meet { `brew install caskroom/cask/brew-cask` }
 end
