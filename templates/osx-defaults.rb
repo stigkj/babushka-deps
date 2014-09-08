@@ -16,9 +16,9 @@ meta :osx_defaults do
 
       status == mapped_value
     }
-    
+
     meet {
-      shell "defaults write #{domain} #{key} -#{type} #{value}"
+      log_shell "Setting config for #{domain} #{key} to #{value} (#{type})", "defaults write #{domain} #{key} -#{type} #{value}"
     }
   end
 end
