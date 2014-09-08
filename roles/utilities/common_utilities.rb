@@ -3,6 +3,7 @@ dep 'common utilities' do
   requires 'zsh.managed',
            'git',
            'tig.managed',
+           'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
            'VirtualBox'
