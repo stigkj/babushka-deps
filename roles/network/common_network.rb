@@ -1,4 +1,5 @@
 dep 'common network' do
   # TODO set into Network dir
-  requires 'HipChat'
+  requires 'HipChat',
+           'GoogleChrome'
 end
