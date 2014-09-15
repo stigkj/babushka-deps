@@ -35,8 +35,6 @@ end
 dep 'install bundler', :ruby_version do
   requires 'install ruby'.with(version: ruby_version)
 
-  before { shell "source /usr/local/opt/chruby/share/chruby/chruby.sh && chruby #{ruby_version}"}
-
   met? { files_exists_matching "~/.gem/ruby/#{ruby_version}/gems/bundler-*/bin/bundler" }
   meet {
     log_block "Installing bundler for Ruby v#{ruby_version}" do
