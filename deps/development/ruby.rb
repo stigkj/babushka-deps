@@ -1,7 +1,16 @@
+DEFAULT_RUBY_VERSION = '1.9.3'
+CHRUBY_CONTENT_FOR_SHELL_PROFILE = %(
+# Inserted by ruby dependency in Babushka
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+chruby #{DEFAULT_RUBY_VERSION}
+)
+
 dep 'Setup Ruby environment' do
   requires 'chruby setup',
-           'install bundler'.with(ruby_version: '1.9.3'),
-           'install bundler'.with(ruby_version: '2.1.2')
+           'install bundler'.with(ruby_version: DEFAULT_RUBY_VERSION),
+           'install bundler'.with(ruby_version: '2.1.2'),
 end
 
 dep 'chruby setup' do
@@ -16,10 +25,7 @@ dep 'chruby setup' do
     log_block "Install chruby into shell profile files ['~/.bashrc', '~/.zshrc']" do
       shell_profile_files.each { |pathname|
         pathname.open(mode: 'w') { |file|
-          file.puts ''
-          file.puts '# Inserted by ruby dependency in Babushka'
-          file.puts 'source /usr/local/opt/chruby/share/chruby/chruby.sh'
-          file.puts 'source /usr/local/opt/chruby/share/chruby/auto.sh'
+          file.puts CHRUBY_CONTENT_FOR_SHELL_PROFILE
         }
     }
     end
