@@ -1,4 +1,5 @@
 DEFAULT_RUBY_VERSION = '1.9.3'
+DEFAULT_RUBY_VERSION_WITH_PATCH_LEVEL = "#{DEFAULT_RUBY_VERSION}p545"
 CHRUBY_CONTENT_FOR_SHELL_PROFILE = %(
 # Inserted by ruby dependency in Babushka
 source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -11,6 +12,7 @@ dep 'Setup Ruby environment' do
   requires 'chruby setup',
            'install bundler'.with(ruby_version: DEFAULT_RUBY_VERSION),
            'install bundler'.with(ruby_version: '2.1.2'),
+           'shell must be reloaded to start with correct ruby environment if needed'
 end
 
 dep 'chruby setup' do
@@ -55,10 +57,22 @@ dep 'chruby.lib'
 
 dep 'ruby-install.managed'
 
+dep 'shell must be reloaded to start with correct ruby environment if needed' do
+  met? {
+    in_path?("ruby ~> #{DEFAULT_RUBY_VERSION_WITH_PATCH_LEVEL}") && ruby_path.include?('~/.rubies'.p).tap { |result|
+      unmeetable! "Must reload shell to get the correct ruby in path (now: #{ruby_path})" unless result
+    }
+  }
+end
+
 def shell_profile_files
   ['~/.bashrc'.p, '~/.zshrc'.p]
 end
 
 def files_exists_matching(path_expression)
   !path_expression.p.glob.empty?
+end
+
+def ruby_path
+  shell! 'which ruby'
 end
