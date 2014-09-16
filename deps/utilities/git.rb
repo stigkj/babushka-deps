@@ -1,14 +1,18 @@
 dep 'git' do
-  requires 'git.managed'
-  # Need that mackup restore has setup hooks before fixing them below
-  requires 'mackup'
+  requires 'git.managed',
+           # Need that mackup restore has setup hooks before fixing them below
+           'mackup'
 
   met? {
-    '~/.git/template/hooks/'.p.children.all? { |filename| filename.p.executable? }
+    all_hooks.all? { |filename| filename.p.executable? }
   }
   meet {
-    '~/.git/template/hooks/'.p.children.each { |filename| shell "chmod +x #{filename}" }
+    all_hooks.each { |filename| shell "chmod +x #{filename}" }
   }
 end
 
 dep 'git.managed'
+
+def all_hooks
+  '~/.git/template/hooks/'.p.children
+end
