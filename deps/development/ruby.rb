@@ -20,7 +20,10 @@ dep 'chruby setup' do
 
   met? {
     shell_profile_files.all? { |pathname|
-      pathname.exists? && pathname.read.include?('chruby.sh')
+      pathname.exists? &&
+      pathname.read.include?('chruby.sh') &&
+      pathname.read.include?('auto.sh') &&
+      pathname.read.include?(DEFAULT_RUBY_VERSION)
     }
   }
   meet {
