@@ -26,7 +26,7 @@ dep 'chruby setup' do
   meet {
     log_block "Install chruby into shell profile files ['~/.bashrc', '~/.zshrc']" do
       shell_profile_files.each { |pathname|
-        pathname.open(mode: 'w') { |file|
+        pathname.open(mode: 'a') { |file|
           file.puts CHRUBY_CONTENT_FOR_SHELL_PROFILE
         }
     }
