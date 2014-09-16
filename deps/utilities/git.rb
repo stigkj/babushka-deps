@@ -1,5 +1,6 @@
 dep 'git' do
   requires 'git.managed',
+           'git-up.gem',
            # Need that mackup restore has setup hooks before fixing them below
            'mackup'
 
@@ -12,6 +13,10 @@ dep 'git' do
 end
 
 dep 'git.managed'
+
+dep 'git-up.gem' do
+  requires 'Setup Ruby environment'
+end
 
 def all_hooks
   '~/.git/template/hooks/'.p.children
