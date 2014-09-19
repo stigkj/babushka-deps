@@ -38,5 +38,5 @@ dep 'OS X config', :for => :osx do
 end
 
 def marker_file
-  "/tmp/osx_hacks_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p
+  "/tmp/osx_config_killed_all_#{DateTime.now.strftime('%Y_%m_%d')}".p
 end
