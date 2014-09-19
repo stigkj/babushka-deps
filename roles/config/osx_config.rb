@@ -22,6 +22,7 @@ dep 'OS X config', :for => :osx do
            'Enable full keyboard access for all controls.osx_defaults',
            'Disable Dashboard from running.osx_defaults',
            'Enable key repeat',
+           'Enable right click with two finger single tap',
            'Enable password-protected screensaver'
   #TODO change keyboard shortcuts for Alfred and Spotlight
 
