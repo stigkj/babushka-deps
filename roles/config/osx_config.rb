@@ -21,6 +21,7 @@ dep 'OS X config', :for => :osx do
            'Use function keys as function keys.osx_defaults',
            'Enable full keyboard access for all controls.osx_defaults',
            'Disable Dashboard from running.osx_defaults',
+           'Enable key repeat',
            'Enable password-protected screensaver'
   #TODO change keyboard shortcuts for Alfred and Spotlight
 
