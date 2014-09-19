@@ -1,12 +1,15 @@
 meta :osx_defaults do
+  accepts_value_for :current_host, false
   accepts_value_for :domain
   accepts_value_for :key
   accepts_value_for :type
   accepts_value_for :value
 
   template do
+    host = :current_host ? '-currentHost' : ''
+
     met? {
-      status = shell? "defaults read #{domain} #{key}".strip
+      status = shell? "defaults #{host} read #{domain} #{key}".strip
       mapped_value = value
 
       if type == 'bool'
@@ -18,7 +21,8 @@ meta :osx_defaults do
     }
 
     meet {
-      log_shell "Setting config for #{domain} #{key} to #{value} (#{type})", "defaults write #{domain} #{key} -#{type} #{value}"
+      log_shell "Setting config #{:current_host ? 'on current host ' : ' '}for #{domain} #{key} to #{value} (#{type})",
+                "defaults #{host} write #{domain} #{key} -#{type} #{value}"
     }
   end
 end
