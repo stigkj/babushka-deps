@@ -1,0 +1,1 @@
+dep 'groovy.managed'
