@@ -6,5 +6,6 @@ dep 'common utilities' do
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
+           'Evernote',
            'VirtualBox'
 end
