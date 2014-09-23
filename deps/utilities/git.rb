@@ -19,5 +19,5 @@ dep 'git-up.gem' do
 end
 
 def all_hooks
-  '~/.git/template/hooks/'.p.children
+  '~/.git_global/template/hooks/'.p.children
 end

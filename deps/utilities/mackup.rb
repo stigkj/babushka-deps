@@ -10,6 +10,6 @@ dep 'mackup HEAD' do
 end
 
 dep 'Make sure mackup restore is run before continuing' do
-  met? { '~/.git'.p.symlink? }
+  met? { '~/.git_global'.p.symlink? }
   meet { Babushka::Prompt.confirm('Run mackup restore now in another shell before pressing enter', :default => 'y') }
 end
