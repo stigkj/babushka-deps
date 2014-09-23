@@ -4,6 +4,7 @@ dep 'common utilities' do
            'git',
            'tig.managed',
            'git-run.npm',
+           'vim.managed',
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
