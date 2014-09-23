@@ -1,4 +1,4 @@
-dep 'Enable key repeat' do
+dep 'Enable key repeat.osx_defaults' do
   domain 'NSGlobalDomain'
   key 'ApplePressAndHoldEnabled'
   type 'bool'
