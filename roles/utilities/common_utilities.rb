@@ -6,6 +6,7 @@ dep 'common utilities' do
            'git-run.npm',
            'vim.managed',
            'docker.managed',
+           'dvm',
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
