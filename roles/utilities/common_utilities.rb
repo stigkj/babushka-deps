@@ -7,6 +7,7 @@ dep 'common utilities' do
            'vim.managed',
            'docker.managed',
            'dvm',
+           'jq.managed',
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
