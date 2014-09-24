@@ -5,6 +5,7 @@ dep 'common utilities' do
            'tig.managed',
            'git-run.npm',
            'vim.managed',
+           'docker.managed',
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
