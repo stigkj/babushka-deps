@@ -6,6 +6,7 @@ dep 'common development' do
            'go-lang',
            'gradle.managed',
            'groovy.managed',
+           'leiningen.managed',
            'Tomcat 7',
            'IntelliJ IDEA 14 EAP',
            'ruby'
