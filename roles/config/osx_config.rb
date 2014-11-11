@@ -2,6 +2,7 @@ require 'date'
 
 dep 'OS X config', :for => :osx do
   requires 'Setup shell',
+           'Turn off Gatekeeper for all applications',
            'Allow text selection in QuickLook.osx_defaults',
            'Automatically hide and show the Dock.osx_defaults',
            'Avoid creating .DS_Store files on network volumes.osx_defaults',
