@@ -1,6 +1,7 @@
 dep 'common development' do
   # TODO install into Development dir
-  requires 'Java 8',
+  requires 'fig.pip',
+           'Java 8',
            'gradle.managed',
            'groovy.managed',
            'Tomcat 7',
