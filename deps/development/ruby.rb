@@ -19,7 +19,7 @@ dep 'chruby setup' do
   requires 'chruby.lib'
 
   met? {
-    shell_profile_files.all? { |pathname|
+    Babushka::FileDefs.shell_profile_files.all? { |pathname|
       pathname.exists? &&
       pathname.read.include?('chruby.sh') &&
       pathname.read.include?('auto.sh') &&
@@ -28,7 +28,7 @@ dep 'chruby setup' do
   }
   meet {
     log_block "Install chruby into shell profile files ['~/.bashrc', '~/.zshrc']" do
-      shell_profile_files.each { |pathname|
+      Babushka::FileDefs.shell_profile_files.each { |pathname|
         pathname.open(mode: 'a') { |file|
           file.puts CHRUBY_CONTENT_FOR_SHELL_PROFILE
         }
@@ -66,10 +66,6 @@ dep 'shell must be reloaded to start with correct ruby environment if needed' do
       unmeetable! "Must reload shell to get the correct ruby in path (now: #{ruby_path})" unless result
     }
   }
-end
-
-def shell_profile_files
-  ['~/.bashrc'.p, '~/.zshrc'.p]
 end
 
 def files_exists_matching(path_expression)
