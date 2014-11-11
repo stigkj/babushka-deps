@@ -7,6 +7,7 @@ dep 'common utilities' do
            'vim.managed',
            'docker.managed',
            'puppet.gem',
+           'Packer',
            'dvm',
            'jq.managed',
            'the_silver_searcher.managed',
