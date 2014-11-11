@@ -6,4 +6,5 @@ dep 'IntelliJ IDEA 14 EAP' do
   }
 end
 
+# TODO change memory configuration in plist
 dep 'intellij-idea-ultimate-eap.cask', :for => :osx
