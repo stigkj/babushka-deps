@@ -1,5 +1,6 @@
 dep 'common network' do
   # TODO set into Network dir
   requires 'HipChat',
-           'GoogleChrome'
+           'GoogleChrome',
+           'wget.managed'
 end
