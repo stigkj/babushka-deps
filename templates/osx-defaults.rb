@@ -1,4 +1,5 @@
 meta :osx_defaults do
+  accepts_value_for :as_root, false
   accepts_value_for :current_host, false
   accepts_value_for :domain
   accepts_value_for :key
@@ -22,7 +23,8 @@ meta :osx_defaults do
 
     meet {
       log_shell "Setting config #{:current_host ? 'on current host ' : ' '}for #{domain} #{key} to #{value} (#{type})",
-                "defaults #{host} write #{domain} #{key} -#{type} #{value}"
+                "defaults #{host} write #{domain} #{key} -#{type} #{value}",
+                :sudo => :as_root
     }
   end
 end
