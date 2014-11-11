@@ -10,6 +10,7 @@ dep 'common utilities' do
            'Packer',
            'dvm',
            'jq.managed',
+           'selfspy.pip',
            'the_silver_searcher.managed',
            'Light Table',
            'Beyond Compare',
