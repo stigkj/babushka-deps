@@ -1,5 +1,6 @@
 dep 'OS X utilities', :for => :osx do
   requires 'alfred.cask',
+           'appcleaner.cask',
            'choosy.cask',
            'fantastical.cask',
            'ipartition.cask',
