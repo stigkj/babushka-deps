@@ -6,6 +6,7 @@ dep 'common utilities' do
            'git-run.npm',
            'vim.managed',
            'docker.managed',
+           'puppet.gem',
            'dvm',
            'jq.managed',
            'the_silver_searcher.managed',
