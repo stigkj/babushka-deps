@@ -1,4 +1,5 @@
 dep 'OS X network', :for => :osx do
-  requires 'mailplane.cask',
+  requires 'adium.cask',
+           'mailplane.cask'
            'slink.cask'
 end
