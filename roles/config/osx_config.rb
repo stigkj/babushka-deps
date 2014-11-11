@@ -24,8 +24,6 @@ dep 'OS X config', :for => :osx do
            'Disable Dashboard from running.osx_defaults',
            'Enable key repeat.osx_defaults',
            'Enable right click with two finger single tap',
-  #TODO change keyboard shortcuts for Alfred and Spotlight
-  #TODO set Chrome as default browser by using https://github.com/kerma/defaultbrowser/blob/master/build/defaultbrowser
            'Setup screensaver'
 
   met? { marker_file.exists? }
