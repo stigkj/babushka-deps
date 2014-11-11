@@ -6,5 +6,6 @@ dep 'common media' do
            'mps.managed',
            'mpv',
            'Narrative Uploader',
+           'peerflix.npm',
            'Tomahawk'
 end
