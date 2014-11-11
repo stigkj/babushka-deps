@@ -5,6 +5,7 @@ dep 'OS X utilities', :for => :osx do
            'fantastical.cask',
            'ipartition.cask',
            'iterm2.cask',
+           'kitematic.cask',
            'onepassword.cask',
            'gitx-rowanj.cask',
            'stay.cask'
