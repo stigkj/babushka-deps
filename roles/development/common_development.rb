@@ -9,5 +9,6 @@ dep 'common development' do
            'leiningen.managed',
            'Tomcat 7',
            'IntelliJ IDEA 14 EAP',
+           'vert.x.managed',
            'ruby'
 end
