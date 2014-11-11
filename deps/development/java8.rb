@@ -18,5 +18,5 @@ dep 'oracle-java8-installer.managed', :for => :apt do
 end
 
 dep 'oracle-installer-automated', :for => :apt do
-  meet { shell('echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections') }
+  meet { shell 'echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections' }
 end

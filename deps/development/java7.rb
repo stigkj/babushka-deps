@@ -18,5 +18,5 @@ dep 'oracle-java7-installer.managed', :for => :apt do
 end
 
 dep 'oracle-installer-automated', :for => :apt do
-  meet { shell('echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections') }
+  meet { shell 'echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections' }
 end
