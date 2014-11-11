@@ -3,5 +3,6 @@ dep 'common media' do
   requires 'Adobe Flash Player',
            'Miro Video Converter',
            'mpv',
+           'Narrative Uploader',
            'Tomahawk'
 end
