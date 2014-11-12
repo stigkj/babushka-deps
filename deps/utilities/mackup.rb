@@ -1,10 +1,12 @@
 dep 'mackup' do
   requires 'Dropbox',
-    'mackup HEAD',
-    'Make sure mackup restore is run before continuing'
+           'mackup HEAD',
+           'Make sure mackup restore is run before continuing'
 end
 
 dep 'mackup HEAD' do
+  requires 'binary.homebrew'
+
   met? { Babushka::BrewHelper.has? 'mackup' }
   meet { log_shell 'Installing mackup', 'brew install mackup --HEAD' }
 end
