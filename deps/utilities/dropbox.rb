@@ -1,13 +1,15 @@
 dep 'Dropbox' do
   requires {
-    on :osx, 'dropbox.cask'
+    on :osx, 'Dropbox.app'
     # TODO setup for Linux too
     otherwise { unsupported_platform! }
   }
   requires 'Make sure Dropbox is initialized before continuing'
 end
 
-dep 'dropbox.cask', :for => :osx
+dep 'Dropbox.app', :for => :osx do
+  source 'https://d1ilhw0800yew8.cloudfront.net/client/Dropbox%202.10.51.dmg'
+end
 
 dep 'Make sure Dropbox is initialized before continuing' do
   met? { '~/Dropbox'.p.exists? }
