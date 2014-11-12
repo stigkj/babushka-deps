@@ -2,7 +2,7 @@ dep 'common media' do
   requires '4K Video Downloader',
            'Adobe Flash Player',
            'Miro Video Converter',
-           'mps.managed',
+           'mps.pip',
            'mpv',
            'Narrative Uploader',
            'peerflix.npm',
