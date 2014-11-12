@@ -1,2 +1,2 @@
 # Youtube player
-dep 'minitube.cask'
+dep 'minitube.cask', :for => :osx
