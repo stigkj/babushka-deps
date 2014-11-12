@@ -19,7 +19,7 @@ dep 'repo.setup_upstream_in_my_forked_homebrew' do
 end
 
 dep 'repo.my_forked_homebrew' do
-  requires_when_unmet 'writable.fhs'.with(path), 'fix world writable usr_local', 'git'
+  requires_when_unmet 'writable.fhs'.with(path), 'fix world writable usr_local'
   met? {
     if repo.exists? && !repo.include?('29d85578e75170a6c0eaebda4d701b46f1acf446')
       unmeetable! "There is a non-homebrew repo at #{path}."
