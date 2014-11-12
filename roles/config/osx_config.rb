@@ -1,7 +1,7 @@
 require 'date'
 
 dep 'OS X config', :for => :osx do
-  requires 'Setup shell',
+  requires 'Homebrew zsh as default shell',
            'Turn off Gatekeeper for all applications',
            'Allow text selection in QuickLook.osx_defaults',
            'Automatically hide and show the Dock.osx_defaults',
