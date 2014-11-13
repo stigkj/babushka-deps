@@ -3,7 +3,7 @@ dep 'OS X utilities', :for => :osx do
            'appcleaner.cask',
            'choosy.cask',
            'fantastical.cask',
-           'ipartition.cask',
+           'iPartition.app',
            'iterm2.cask',
            'kitematic.cask',
            'onepassword.cask',
