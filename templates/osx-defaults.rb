@@ -7,7 +7,7 @@ meta :osx_defaults do
   accepts_value_for :value
 
   template do
-    host = :current_host ? '-currentHost' : ''
+    host = current_host ? '-currentHost' : ''
 
     met? {
       status = shell? "defaults #{host} read #{domain} #{key}".strip
@@ -22,9 +22,9 @@ meta :osx_defaults do
     }
 
     meet {
-      log_shell "Setting config #{:current_host ? 'on current host ' : ' '}for #{domain} #{key} to #{value} (#{type})",
+      log_shell "Setting config #{current_host ? 'on current host ' : ' '}for #{domain} #{key} to #{value} (#{type})",
                 "defaults #{host} write #{domain} #{key} -#{type} #{value}",
-                :sudo => :as_root
+                :sudo => as_root
     }
   end
 end
