@@ -42,7 +42,7 @@
   * http://hayakubundle.com/
   * https://github.com/jcartledge/vintage-sublime-surround
   * https://github.com/rodcloutier/Vintageous-Origami
-* Look at a app for producthunt.com
+* Check [Hunt X](http://huntx.mobilefirst.in) - an app for producthunt.com
 * Check [markmon](https://github.com/yyjhao/markmon) - pandoc/markdown previewer
 * git plugins/extensions
   * https://github.com/renard/git-line-history
