@@ -65,6 +65,12 @@
 * Check [Bowtie](http://bowtieapp.com) - see and control your music in iTunes, Spotify, etc
 * Check [Bulkr](http://clipyourphotos.com/bulkr) - backup/download photos/videos from Flickr
 * Check [beets](http://beets.radbox.org) - command-line tool for managing one's music
+* What to use for picture handling?
+  * http://www.darktable.org
+* Other software for video streaming besides Popcorn time
+  * http://www.tribler.org
+* Music streaming
+  * http://atraci.github.io/Atraci-website
 
 
 ## Development
@@ -96,3 +102,6 @@
 
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
+* What to use for backups?
+  * http://git-annex.branchable.com
+
