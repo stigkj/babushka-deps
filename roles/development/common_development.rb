@@ -7,7 +7,6 @@ dep 'common development' do
            'groovy.managed',
            'leiningen.managed',
            'maven.managed',
-           'Tomcat 7',
            'IntelliJ IDEA 14 EAP',
            'vert.x.managed',
            'ruby'
