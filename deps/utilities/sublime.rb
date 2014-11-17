@@ -7,6 +7,6 @@ dep 'Sublime Text' do
 end
 
 dep 'sublime-text3.cask', :for => :osx do
-  requires 'homebrew tap for caskroom/versions'
+  requires 'caskroom versions'
 end
 
