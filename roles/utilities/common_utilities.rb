@@ -14,6 +14,7 @@ dep 'common utilities' do
            'Light Table',
            'Beyond Compare',
            'Evernote',
+           'Sublime Text',
            'Vagrant',
            'VirtualBox'
 end
