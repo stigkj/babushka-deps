@@ -6,4 +6,9 @@ dep 'Narrative Uploader' do
   }
 end
 
-dep 'narrative-uploader.cask', :for => :osx
+dep 'narrative-uploader.cask', :for => :osx do
+  requires 'onepassword.cask'
+  requires_when_unmet
+    'spawn OS X app'.
+      with('/opt/homebrew-cask/Caskroom/narrative-uploader/latest/Narrative Uploader.app')
+end
