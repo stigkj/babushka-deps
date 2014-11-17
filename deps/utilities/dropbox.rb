@@ -13,5 +13,8 @@ end
 
 dep 'Make sure Dropbox is initialized before continuing' do
   met? { '~/Dropbox'.p.exists? }
-  meet { Babushka::Prompt.confirm('Start DropBox and logon, and wait for the Dropbox folder to be created and synced before pressing enter', :default => 'y') }
+  meet {
+    Process.spawn('open /Applications/Dropbox.app')
+    Babushka::Prompt.confirm('Log into Dropbox, and wait for the Dropbox folder to be created and synced before pressing enter', :default => 'y')
+  }
 end
