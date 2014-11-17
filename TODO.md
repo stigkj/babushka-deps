@@ -54,6 +54,7 @@
   * http://projects.jga.me/layouts
 * vim plugins
   * https://github.com/int3/vim-extradite
+  * http://sjl.bitbucket.org/gundo.vim
 * Check [evercreate](https://github.com/jgallen23/evercreate) - cli for Evernote
 * Check [ncp](http://www.fefe.de/ncp) - fast file copy tool for LANs
 * tmux stuff
