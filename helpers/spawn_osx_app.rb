@@ -6,7 +6,7 @@ dep 'spawn OS X app', :app_path, :for => :osx do
   }
 
   def marker_file
-    fixed_path = app_path.replace '/', '_'
+    fixed_path = app_path.to_s.gsub '/', '_'
     "/tmp/osx_app_#{fixed_path}_started_#{DateTime.now.strftime('%Y_%m_%d')}".p
   end
 end
