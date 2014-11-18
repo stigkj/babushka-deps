@@ -5,7 +5,7 @@ dep 'mackup' do
 end
 
 dep 'mackup HEAD' do
-  requires 'binary.homebrew'
+  requires 'binary.my_forked_homebrew'
 
   met? { Babushka::BrewHelper.has? 'mackup' }
   meet { log_shell 'Installing mackup', 'brew install mackup --HEAD' }
