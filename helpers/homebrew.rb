@@ -19,7 +19,9 @@ dep 'repo.setup_upstream_in_my_forked_homebrew' do
 end
 
 dep 'repo.my_forked_homebrew' do
-  requires_when_unmet 'writable.fhs'.with(path), 'fix world writable usr_local'
+  requires_when_unmet 'writable.fhs'.with(path), 
+                      'fix world writable usr_local',
+                      'fix owner of usr_local'
   met? {
     if repo.exists? && !repo.include?('29d85578e75170a6c0eaebda4d701b46f1acf446')
       unmeetable! "There is a non-homebrew repo at #{path}."
@@ -36,7 +38,16 @@ end
 
 dep 'fix world writable usr_local' do
   met? { !path.p.world_writable? }
-  meet { log_shell 'Fixing world writable usr/local', "chmod o-w #{path}", :sudo => true }
+  meet { log_shell "Fixing world writable #{path}", "chmod o-w #{path}", :sudo => true }
+end
+
+dep 'fix owner of usr_local' do
+  # owned? returns false for symlinks pointing to nothing, so therefore the exists? check is needed
+  met? { path.p.find.all? { |p| p.exists? ? p.owned? : true } }
+  meet { 
+    whoami = shell 'whoami'
+    log_shell "Setting owner of #{path} to #{whoami}", "chown -R #{whoami} #{path}", :sudo => true
+  }
 end
 
 def path
