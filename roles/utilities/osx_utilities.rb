@@ -1,5 +1,5 @@
 dep 'OS X utilities', :for => :osx do
-  requires 'alfred.cask',
+  requires 'Alfred',
            'appcleaner.cask',
            'choosy.cask',
            'fantastical.cask',
@@ -8,5 +8,5 @@ dep 'OS X utilities', :for => :osx do
            'kitematic.cask',
            'onepassword.cask',
            'gitx-rowanj.cask',
-           'stay.cask'
+           'Stay'
 end
