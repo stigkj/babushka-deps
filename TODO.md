@@ -30,10 +30,16 @@
     * http://omarriott.com/aux/zsh-prezto-git-dirty-info
     * http://mikebuss.com/2014/04/07/customizing-prezto/
     * https://github.com/olivierverdier/zsh-git-prompt
+    * http://www.paradox.io/posts/9-my-new-zsh-prompt
+    * http://omarriott.com/aux/zsh-prezto-git-dirty-info/
   * Other stuff
     * http://natelandau.com/my-mac-osx-bash_profile/
     * http://jeromedalbert.com/migrate-from-oh-my-zsh-to-prezto/
     * http://grml.org/zsh/#zshlovers
+    * http://linhmtran168.github.io/blog/2013/12/15/ditching-oh-my-zsh-for-prezto/
+    * http://joshsymonds.com/blog/2014/06/12/shell-awesomeness-with-prezto/
+    * http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
+    * http://mikebuss.com/2014/04/07/customizing-prezto/
 * Sublime plugins/themes
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
