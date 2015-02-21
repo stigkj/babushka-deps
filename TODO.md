@@ -106,6 +106,8 @@
   * http://www.tribler.org
 * Music streaming
   * http://atraci.github.io/Atraci-website
+* Use Google Play Music instead of Spotify?
+  * Use the 3rd party native app [Radiant player](https://github.com/kbhomes/radiant-player-mac)
 
 
 ## Development
