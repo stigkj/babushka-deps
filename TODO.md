@@ -114,6 +114,7 @@
 
 * Check [Stylizer](http://www.skybound.ca) - Seems to be a nice CSS design app
 * Check [shashin](https://github.com/maxkueng/shashin) - takes screenshots of websites in different resolutions (look at shashin-server too)
+* Check [PSequel](http://www.psequel.com) - nice-looking PostgreSQL GUI tool
 
 ### Development environment in the cloud
 
