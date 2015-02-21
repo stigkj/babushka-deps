@@ -7,6 +7,7 @@
 * [Sort folders first in Finder](http://mygeekdaddy.net/2013/10/24/change-mavericks-finder-app-sort-order)
 * [Setup environment variables for GUI apps](http://stackoverflow.com/a/26477515)
 * Check if ulimit should be changed from 256 to X
+* Enable cups web ui (cupsctl WebInterface=yes)
 * defaults write stuff
   * Nice OS X defaults write site: http://www.defaults-write.com/
   * Change keyboard shortcuts for Alfred and Spotlight
