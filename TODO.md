@@ -118,6 +118,9 @@
 * Choose static web server for front-end work (maybe both):
   * [harp](http://harpjs.com) - static web server with built-in preprocessing (Markdown, LESS, Coffescript, etc)
   * [puer](https://github.com/leeluolee/puer) - web server for development with mocking, etc
+* golang stuff
+  * https://github.com/moovweb/gvm
+  * https://github.com/alouche/rodent
 
 ### Development environment in the cloud
 
