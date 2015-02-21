@@ -1,4 +1,8 @@
 dep 'Enable access for assistive devices', :for => :osx do
-  met? { File.exists? '/private/var/db/.AccessibilityAPIEnabled' }
-  meet { shell('touch /private/var/db/.AccessibilityAPIEnabled', :sudo => true) }
+  met? { File.exists? path }
+  meet { log_shell 'Enabling access for assistive devices', "touch #{path}", :sudo => true }
+end
+
+def path
+  '/private/var/db/.AccessibilityAPIEnabled'
 end
