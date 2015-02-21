@@ -80,6 +80,7 @@
 * Check [evercreate](https://github.com/jgallen23/evercreate) - cli for Evernote
 * Check [ncp](http://www.fefe.de/ncp) - fast file copy tool for LANs
 * Check [GitHub Mac](https://mac.github.com) - Nice GitHub client from the GitHub folks
+* Check [Vagrant Manager](https://github.com/lanayotech/vagrant-manager) - a status bar menu app for managing all Vagrant machines
 * tmux stuff
   * https://github.com/oxidane/tmuxomatic
 
