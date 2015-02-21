@@ -1,10 +1,10 @@
-dep 'IntelliJ IDEA 14 EAP' do
+dep 'IntelliJ IDEA 14' do
   requires 'caskroom versions'
   requires {
-    on :osx, 'intellij-idea-eap.cask'
+    on :osx, 'intellij-idea.cask'
     otherwise { unsupported_platform! }
   }
 end
 
 # TODO change memory configuration in plist
-dep 'intellij-idea-eap.cask', :for => :osx
+dep 'intellij-idea.cask', :for => :osx
