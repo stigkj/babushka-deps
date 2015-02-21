@@ -1,4 +1,4 @@
-dep 'npm & node' do
+dep 'node & npm' do
   requires 'node.managed'
 end
 
