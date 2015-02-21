@@ -64,6 +64,7 @@
 * Check [markmon](https://github.com/yyjhao/markmon) - pandoc/markdown previewer
 * Check [vmd](https://github.com/yoshuawuyts/vmd) - markdown previewer in nodejs
 * Check [digested](http://drivenpixels.com/digested) - imports bookmarks/notes from iBooks into Evernote/a PDF
+* Check [LICEcap](http://www.cockos.com/licecap) - simple animated screen captures in .gif
 * git plugins/extensions
   * https://github.com/renard/git-line-history
 * Window management:
