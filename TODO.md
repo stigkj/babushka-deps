@@ -88,6 +88,7 @@
 ## Network
 
 * Check [postman](https://github.com/zachlatta/postman) - cli for batch-sending email
+* Check [sshuttle](https://github.com/sshuttle/sshuttle) - ssh-based vpn
 ## Media
 
 * Check [Bowtie](http://bowtieapp.com) - see and control your music in iTunes, Spotify, etc
