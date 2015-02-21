@@ -12,6 +12,8 @@
 * defaults write stuff
   * Nice OS X defaults write site: http://www.defaults-write.com/
   * Change keyboard shortcuts for Alfred and Spotlight
+  * Enable "Show location icon in menu bar when System Services request your location"
+    - in System Preferences -> Security & Privacy -> Privacy -> Location Services -> System Services Details...
   * Look at these for inspiration:
     * https://github.com/zenangst/OSX-Configuration
     * https://github.com/hjuutilainen/dotfiles/tree/master/bin
