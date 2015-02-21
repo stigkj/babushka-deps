@@ -79,6 +79,7 @@
   * http://sjl.bitbucket.org/gundo.vim
 * Check [evercreate](https://github.com/jgallen23/evercreate) - cli for Evernote
 * Check [ncp](http://www.fefe.de/ncp) - fast file copy tool for LANs
+* Check [GitHub Mac](https://mac.github.com) - Nice GitHub client from the GitHub folks
 * tmux stuff
   * https://github.com/oxidane/tmuxomatic
 
