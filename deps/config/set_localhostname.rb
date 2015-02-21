@@ -1,5 +1,5 @@
 dep 'Set local host name', :for => :osx do
-  hostname = ENV['USER']
+  hostname = 'local'
 
   met? {
     shell('scutil --get LocalHostName') == hostname
