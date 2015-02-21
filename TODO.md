@@ -146,6 +146,8 @@
 
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
+* What to use for email organizing?
+  * http://www.inboxvudu.com
 * What to use for backup/sync?
   * Some other Kickstarter project that only synced what was necessary
   * http://git-annex.branchable.com
