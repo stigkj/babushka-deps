@@ -20,6 +20,7 @@
     * https://github.com/mathiasbynens/dotfiles
     * https://github.com/ymendel/dotfiles/blob/master/osx/input.defaults
     * https://github.com/thekompanee/sinstallation/blob/master/preferences/mouse.sh
+    * https://gist.github.com/brandonb927/3195465
 
 
 ## Utilities
