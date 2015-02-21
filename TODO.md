@@ -5,6 +5,7 @@
   * Check that the Homebrew version of zsh is installed: by path (which zsh) or version?
 * [Set Chrome as default browser](https://github.com/kerma/defaultbrowser/blob/master/build/defaultbrowser)
 * [Sort folders first in Finder](http://mygeekdaddy.net/2013/10/24/change-mavericks-finder-app-sort-order)
+* [Setup environment variables for GUI apps](http://stackoverflow.com/a/26477515)
 * defaults write stuff
   * Nice OS X defaults write site: http://www.defaults-write.com/
   * Change keyboard shortcuts for Alfred and Spotlight
