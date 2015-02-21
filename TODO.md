@@ -90,6 +90,11 @@
 * Check [postman](https://github.com/zachlatta/postman) - cli for batch-sending email
 * Check [sshuttle](https://github.com/sshuttle/sshuttle) - ssh-based vpn
 * Check [Profanity](http://www.profanity.im) - console-based XMPP client
+* Which tunneling-from-internet-to-localhost solution to choose:
+  * [ngrok](https://ngrok.com)
+  * [finch](https://meetfinch.com)
+
+
 ## Media
 
 * Check [Bowtie](http://bowtieapp.com) - see and control your music in iTunes, Spotify, etc
