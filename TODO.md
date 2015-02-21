@@ -146,6 +146,18 @@
 
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
-* What to use for backups?
+* What to use for backup/sync?
+  * Some other Kickstarter project that only synced what was necessary
   * http://git-annex.branchable.com
+  * https://ind.ie/pulse
+  * https://sher.ly
+  * http://camlistore.org
+  * BitTorrent Sync (http://www.getsync.com)
+  * http://www.odrive.com
+  * Google Drive
+    * Use this client instead? https://github.com/odeke-em/drive
+* Backup online stuff
+  - GMail with [Gmvault](http://gmvault.org)
+  - Git-repos (Github, Bitbucket, etc) with someting like [gitmirror](https://github.com/dustin/gitmirror)
+
 
