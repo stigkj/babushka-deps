@@ -40,6 +40,11 @@
     * http://joshsymonds.com/blog/2014/06/12/shell-awesomeness-with-prezto/
     * http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
     * http://mikebuss.com/2014/04/07/customizing-prezto/
+* Switch to simple editor (should sync with Evernote + handle Markdown)
+  * Simplenote
+  * Folding text
+  * Metanota
+  *   http://brettterpstra.com/projects/nvalt/
 * Sublime plugins/themes
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
