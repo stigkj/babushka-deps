@@ -62,6 +62,7 @@
   * https://github.com/rodcloutier/Vintageous-Origami
 * Check [Hunt X](http://huntx.mobilefirst.in) - an app for producthunt.com
 * Check [markmon](https://github.com/yyjhao/markmon) - pandoc/markdown previewer
+* Check [vmd](https://github.com/yoshuawuyts/vmd) - markdown previewer in nodejs
 * git plugins/extensions
   * https://github.com/renard/git-line-history
 * Window management:
