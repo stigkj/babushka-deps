@@ -65,6 +65,7 @@
 * Check [vmd](https://github.com/yoshuawuyts/vmd) - markdown previewer in nodejs
 * Check [digested](http://drivenpixels.com/digested) - imports bookmarks/notes from iBooks into Evernote/a PDF
 * Check [LICEcap](http://www.cockos.com/licecap) - simple animated screen captures in .gif
+* Add [completion of finnbuild](https://gist.github.com/brujoand/f278d55b00014e37a899)
 * git plugins/extensions
   * https://github.com/renard/git-line-history
 * Window management:
