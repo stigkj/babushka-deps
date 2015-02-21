@@ -8,6 +8,7 @@
 * [Setup environment variables for GUI apps](http://stackoverflow.com/a/26477515)
 * Check if ulimit should be changed from 256 to X
 * Enable cups web ui (cupsctl WebInterface=yes)
+* Remove not needed login items so for example Chrome is not started at login
 * defaults write stuff
   * Nice OS X defaults write site: http://www.defaults-write.com/
   * Change keyboard shortcuts for Alfred and Spotlight
