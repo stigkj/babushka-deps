@@ -115,7 +115,9 @@
 * Check [Stylizer](http://www.skybound.ca) - Seems to be a nice CSS design app
 * Check [shashin](https://github.com/maxkueng/shashin) - takes screenshots of websites in different resolutions (look at shashin-server too)
 * Check [PSequel](http://www.psequel.com) - nice-looking PostgreSQL GUI tool
-* Check [harp](http://harpjs.com) - static web server with built-in preprocessing (Markdown, LESS, Coffescript, etc)
+* Choose static web server for front-end work (maybe both):
+  * [harp](http://harpjs.com) - static web server with built-in preprocessing (Markdown, LESS, Coffescript, etc)
+  * [puer](https://github.com/leeluolee/puer) - web server for development with mocking, etc
 
 ### Development environment in the cloud
 
