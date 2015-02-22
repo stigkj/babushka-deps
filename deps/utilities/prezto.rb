@@ -1,36 +1,55 @@
+# zsh extension framework, ala oh-my-zsh
 dep 'prezto' do
-  requires 'zsh.managed'
-    #requires use project template? see open tab
-    #met?: spawn shell to see that prezto is installed
+  requires 'zsh.managed',
+           'downloaded from github',
+           'config ok'
 end
 
-dep 'prezto.new2' do
-  requires 'zsh.managed'
-
-  path = ENV['HOME'] / '.zprezto'
-
-  met? { File.exists? path }
+dep 'downloaded from github' do
+  met? { prezto_home.exists? }
   meet {
-    git "git@github.com:sorin-ionescu/prezto.git", :to => path
-    cd(path) { shell 'git submodule update --init --recursive' }
-  }
-end
-
-# Clones (my fork of) the Prezto project from GitHub to ~/.zprezto
-dep 'prezto.project' do
-  url 'git@github.com:bradfeehan/prezto.git'
-  path '~/.zprezto'
-end
-
-dep 'prezto.new', :argument do
-  # requires 'xcode tools'
-  met? { "~/.oh-my-zsh".p.exists? }
-  meet do
-    shell "git clone --recursive https://github.com/sorin-ionescu/prezto.git ~/.oh-my-zsh"
-    Dir["#{ENV['HOME']}/.oh-my-zsh/runcoms/z{shenv,shrc,login,logout}"].each do |path|
-      shell "cp -f #{path} #{ENV['HOME']}/.#{File.basename path}"
+    log_block 'Download prezto from GitHub' do
+      shell "git clone --recursive https://github.com/sorin-ionescu/prezto.git #{prezto_home}"
     end
-    shell "chsh -s /bin/zsh"
-    #shell "chmod ugo-x /usr/libexec/path_helper" if host.osx?
+  }
+
+  def prezto_home
+    (ENV['ZDOTDIR'] || ENV['HOME']) / '.zprezto'
+  end
+end
+
+dep 'config ok' do
+  met? { config_ok }
+  meet {
+    config_files.each { |file|
+      homedir_file = homedir_file_of(file)
+
+      if !homedir_file.exists?
+        log_block "Copying #{file} into home directory" do
+          file.cp homedir_file
+        end
+      end
+    }
+  }
+
+  def config_ok
+    included_in_zshrc && config_files_present
+  end
+
+  def included_in_zshrc
+    (ENV['HOME'] / '.zshrc').read.include? '.zprezto/init.zsh'
+  end
+
+  def config_files_present
+    config_files.all? { |file| homedir_file_of(file).exists? }
+  end
+
+  def config_files
+    # TODO should use glob instead, but then each entry must be mapped to a Fancypath
+    "#{ENV['HOME']}/.zprezto/runcoms".p.select 'z*'
+  end
+
+  def homedir_file_of(file)
+    "~/.#{file.basename}".p
   end
 end
