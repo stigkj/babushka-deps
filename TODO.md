@@ -84,6 +84,8 @@
 * Check [ncp](http://www.fefe.de/ncp) - fast file copy tool for LANs
 * Check [GitHub Mac](https://mac.github.com) - Nice GitHub client from the GitHub folks
 * Check [Vagrant Manager](https://github.com/lanayotech/vagrant-manager) - a status bar menu app for managing all Vagrant machines
+* Check [terminal-share](https://github.com/mattt/terminal-share) - cli for OS X sharing services
+* Check [lincastor](https://onflapp.wordpress.com/lincastor) - utility for registering one's own URL protocol schemes
 * tmux stuff
   * https://github.com/oxidane/tmuxomatic
 
@@ -93,6 +95,8 @@
 * Check [postman](https://github.com/zachlatta/postman) - cli for batch-sending email
 * Check [sshuttle](https://github.com/sshuttle/sshuttle) - ssh-based vpn
 * Check [Profanity](http://www.profanity.im) - console-based XMPP client
+* Check [Mosh](https://mosh.mit.edu) - remote terminal application that is better than ssh for bad connections,
+                                       like Wi-Fi with changing IPs and cellular
 * Which tunneling-from-internet-to-localhost solution to choose:
   * [ngrok](https://ngrok.com)
   * [finch](https://meetfinch.com)
@@ -147,6 +151,8 @@
 
 ## Other stuff
 
+* Look at [gdub](https://github.com/dougborg/gdub)
+* Look at [wifi-password](https://github.com/rauchg/wifi-password)
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
 * What to use for email organizing?
