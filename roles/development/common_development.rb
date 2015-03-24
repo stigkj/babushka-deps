@@ -7,7 +7,7 @@ dep 'common development' do
            'groovy.managed',
            'leiningen.managed',
            'maven.managed',
-           'IntelliJ IDEA 14',
+           'IntelliJ IDEA',
            'vert.x.managed',
            'ruby'
 end
