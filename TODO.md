@@ -40,6 +40,8 @@
     * http://joshsymonds.com/blog/2014/06/12/shell-awesomeness-with-prezto/
     * http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
     * http://mikebuss.com/2014/04/07/customizing-prezto/
+    * https://github.com/chilicuil/shundle
+    * Use vim mode for editing on the cli
 * Switch to simple editor (should sync with Evernote + handle Markdown)
   * Simplenote
   * Folding text
