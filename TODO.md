@@ -165,6 +165,7 @@
   * http://camlistore.org
   * BitTorrent Sync (http://www.getsync.com)
   * http://www.odrive.com
+  * https://github.com/syncany/syncany
   * Google Drive
     * Use this client instead? https://github.com/odeke-em/drive
 * Backup online stuff
