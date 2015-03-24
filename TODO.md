@@ -70,6 +70,7 @@
 * Add [completion of finnbuild](https://gist.github.com/brujoand/f278d55b00014e37a899)
 * git plugins/extensions
   * https://github.com/renard/git-line-history
+  * https://github.com/arc90/git-sweep
 * Window management:
   * http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x
   * https://github.com/eczarny/spectacle
