@@ -24,7 +24,6 @@ module Babushka
 
     private
 
-    # brew cask list <pkg> will return ok if pkg is installed and not ok otherwise
     def has_pkg? pkg
       pkg_name = pkg.respond_to?(:name) ? pkg.name : pkg
       Babushka::ShellHelpers.shell?("brew cask list | grep '^#{pkg_name}$'")
