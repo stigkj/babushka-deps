@@ -167,6 +167,8 @@
   * BitTorrent Sync (http://www.getsync.com)
   * http://www.odrive.com
   * https://github.com/syncany/syncany
+  * http://www.soma-zone.com/BackupLoupe - client for Time Machine
+  * http://timesoftware.free.fr/timemachineeditor - edit Time Machine backup intervals
   * Google Drive
     * Use this client instead? https://github.com/odeke-em/drive
 * Backup online stuff
