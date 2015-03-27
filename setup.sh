@@ -24,7 +24,7 @@ install_everything() {
     echo ""
 
     cd $PROGDIR
-    babushka "main"
+    babushka "stigkj:main"
 }
 
 main() {
