@@ -8,7 +8,9 @@ dep 'git' do
     all_hooks.all? { |filename| filename.p.executable? }
   }
   meet {
-    all_hooks.each { |filename| shell "chmod +x #{filename}" }
+    log_block 'Making all git hooks executable' do
+      all_hooks.each { |filename| shell "chmod +x #{filename}" }
+    end
   }
 end
 
