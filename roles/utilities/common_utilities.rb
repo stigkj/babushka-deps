@@ -18,5 +18,6 @@ dep 'common utilities' do
            'Evernote',
            'Sublime Text',
            'Vagrant',
+           'vtop.npm',
            'VirtualBox'
 end
