@@ -4,7 +4,10 @@ dep 'Junos Pulse' do
 end
 
 dep 'JunosPulse.installer', :for => :osx do
-  source "file://#{ENV['HOME']}/Dropbox/JunosPulse313.dmg.zip"
+  source "file://#{ENV['HOME']}/Dropbox/JunosPulse313.dmg"
+  met? {
+    '/Applications/Junos Pulse.app'.p.exist?
+  }
 end
 
 dep 'Create VPN check file' do
