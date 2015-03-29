@@ -5,6 +5,7 @@ dep 'common utilities' do
            'git',
            'tig.managed',
            'git-run.npm',
+           'git-stats.npm',
            'Glances.pip',
            'htop',
            'vim.managed',
