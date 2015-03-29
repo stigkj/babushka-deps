@@ -1,2 +1,4 @@
 # Curses-based monitoring tool
-dep 'glances.pip'
+dep 'Glances.pip' do
+  provides 'glances'
+end
