@@ -5,8 +5,11 @@ dep 'common development' do
            'go-lang',
            'gradle.managed',
            'groovy.managed',
+           'howdoi',
+           'iectrl.npm',
            'leiningen.managed',
            'maven.managed',
+           'mesos.cli.pip',
            'IntelliJ IDEA',
            'vert.x.managed',
            'ruby'
