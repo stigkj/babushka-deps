@@ -7,6 +7,7 @@ dep 'common utilities' do
            'git-run.npm',
            'vim.managed',
            'docker.managed',
+           'prezto',
            'puppet.gem',
            'Packer',
            'jq.managed',
