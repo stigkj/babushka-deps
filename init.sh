@@ -1,15 +1,10 @@
 #!/bin/sh
 set -e
 
-# Can't use $HOME, because sometimes it's not set.
-# Can't use ~, because it depends on $HOME to expand.
-# Can't use ~$(whoami) directly, because it doesn't expand inline.
-# So: write a string in which ~$(whoami) is expanded, and run it in a subshell.
-home=$(sh -c "echo ~$(whoami)")
 : ${me:=$(whoami)}
 
 from="https://$me@github.com/stigkj/babushka-my-machines.git"
-to="$home/dev/mine/babushka-my-machines"
+to="/tmp/babushka-my-machines"
 
 interactive=$([ -t 0 ] && echo 'true' || echo 'false')
 
