@@ -14,13 +14,3 @@ meta :extension do
     }
   }
 end
-
-dep "pocket.extension" do
-  source "http://getpocket.com/apps/link/pocket-safari/?ep=4&s=WELCOME_PAGE"
-  provides "Pocket.safariextz"
-end
-
-dep "adblock.extension" do
-  source "http://safariadblock.com/AdBlockForSafari.safariextz"
-  provides "AdBlock-2.safariextz"
-end
