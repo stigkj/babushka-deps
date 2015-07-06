@@ -7,7 +7,6 @@ dep 'common utilities' do
            'git-stats.npm',
            'Glances.pip',
            'htop',
-           'vim.managed',
            'Docker',
            'prezto',
            'puppet.gem',
@@ -20,5 +19,6 @@ dep 'common utilities' do
            'Sublime Text',
            'Vagrant',
            'vtop.npm',
+           'Vim',
            'VirtualBox'
 end
