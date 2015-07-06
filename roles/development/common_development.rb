@@ -1,6 +1,5 @@
 dep 'common development' do
-  requires 'fig.pip',
-           'Java 8',
+  requires 'Java 8',
            'jruby.managed',
            'go-lang',
            'gradle.managed',

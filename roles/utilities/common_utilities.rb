@@ -1,7 +1,6 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
-  requires 'boot2docker',
-           'zsh.managed',
+  requires 'zsh.managed',
            'git',
            'tig.managed',
            'git-run.npm',
@@ -9,7 +8,7 @@ dep 'common utilities' do
            'Glances.pip',
            'htop',
            'vim.managed',
-           'docker.managed',
+           'Docker',
            'prezto',
            'puppet.gem',
            'Packer',
