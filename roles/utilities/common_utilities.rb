@@ -1,6 +1,7 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
   requires 'zsh.managed',
+           'fasd.managed',
            'git',
            'tig.managed',
            'git-run.npm',
