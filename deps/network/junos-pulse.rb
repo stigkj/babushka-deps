@@ -4,14 +4,14 @@ dep 'Junos Pulse' do
 end
 
 dep 'JunosPulse.installer', :for => :osx do
-  source "file://#{ENV['HOME']}/Dropbox/JunosPulse313.dmg"
+  source "file://#{ENV['HOME']}/Dropbox/Software/JunosPulse313.dmg"
   met? {
     '/Applications/Junos Pulse.app'.p.exist?
   }
 end
 
 dep 'Create VPN check file' do
-  met? { File.exists? vpn_check_file }
+  met? { vpn_check_file.exist? }
   meet {
     log_block 'Creating VPN check file' do
       shell "mkdir -p #{vpn_check_file.parent}", :sudo => true
