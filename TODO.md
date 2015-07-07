@@ -92,7 +92,6 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * tmux stuff
   * https://github.com/oxidane/tmuxomatic
 
-
 ## Network
 
 * Check [postman](https://github.com/zachlatta/postman) - cli for batch-sending email
@@ -104,6 +103,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * [ngrok](https://ngrok.com)
   * [finch](https://meetfinch.com)
 
+* Check [Friends](https://github.com/moose-team/friends) - P2P chat
 
 ## Media
 
