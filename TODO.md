@@ -102,8 +102,12 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Which tunneling-from-internet-to-localhost solution to choose:
   * [ngrok](https://ngrok.com)
   * [finch](https://meetfinch.com)
-
 * Check [Friends](https://github.com/moose-team/friends) - P2P chat
+* Utilities for sending files to other people/devices
+  * https://infinit.io
+  * https://www.techsmith.com/jing.html
+  * https://droplr.com
+  * https://evernote.com/skitch
 
 ## Media
 
