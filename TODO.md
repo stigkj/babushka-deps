@@ -91,6 +91,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Check [lincastor](https://onflapp.wordpress.com/lincastor) - utility for registering one's own URL protocol schemes
 * tmux stuff
   * https://github.com/oxidane/tmuxomatic
+* Check [Disk Sensei](https://www.cindori.org/software/disksensei) - performance optimizer for hard disks
 
 ## Network
 
