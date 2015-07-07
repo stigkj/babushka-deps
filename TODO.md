@@ -1,3 +1,5 @@
+CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-10.10
+
 ## Configuration
 
 * Move 'Setup shell' to utilities?
