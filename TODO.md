@@ -153,7 +153,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * [SickBeard](http://sickbeard.com)
   * [SickRage](https://github.com/echel0n/SickRage)
   * [CouchPotato](https://couchpota.to)
-  * [nzbToMedia](https://github.com/clinton-hall/nzbToMedia) - rovides an efficient way to handle postprocessing for CouchPotato, SickBeard, etc.
+  * [nzbToMedia](https://github.com/clinton-hall/nzbToMedia) - provides an efficient way to handle postprocessing for CouchPotato, SickBeard, etc.
+  * [Sonarr](https://sonarr.tv) - Download TV series
   * [bittorent-channel](https://forums.plex.tv/index.php/topic/102253-rel-bittorrent-channel)
 
 
