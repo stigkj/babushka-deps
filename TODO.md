@@ -116,6 +116,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Check [beets](http://beets.radbox.org) - command-line tool for managing one's music
 * What to use for picture handling?
   * http://www.darktable.org
+  * https://github.com/photo/frontend
 * Other software for video streaming besides Popcorn time
   * http://www.tribler.org
 * Music streaming
