@@ -189,3 +189,5 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 
 * Look at something like 'Hands Off!' http://www.oneperiodic.com/products/handsoff/ (brew cask install hands-off)
 * Magic Launch looks quite good (http://www.oneperiodic.com/bproducts/magiclaunch)
+* Flashlight, the Spotlight plugin system (https://github.com/nate-parrott/Flashlight)
+  - It has a better preview model than Alfred
