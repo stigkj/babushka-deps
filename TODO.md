@@ -187,3 +187,4 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   - Git-repos (Github, Bitbucket, etc) with someting like [gitmirror](https://github.com/dustin/gitmirror)
 
 
+* Look at something like 'Hands Off!' http://www.oneperiodic.com/products/handsoff/ (brew cask install hands-off)
