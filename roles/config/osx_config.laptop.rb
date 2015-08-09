@@ -3,3 +3,4 @@ dep 'OS X config for laptop', :for => :osx do
            'Fix hostname-through-DHCP bug',
            'Set computer name',
            'Set local host name'
+end
