@@ -11,7 +11,6 @@ dep 'OS X config', :for => :osx do
            'Disable warning when changing file extension.osx_defaults',
            "Display full POSIX path in Finder's window title.osx_defaults",
            'Enable access for assistive devices',
-           'Fix hostname-through-DHCP bug',
            'Remove auto-hiding Dock delay.osx_defaults',
            'Remove animation when hiding or showing the Dock.osx_defaults',
            'Show all filename extensions in Finder.osx_defaults',
@@ -24,8 +23,6 @@ dep 'OS X config', :for => :osx do
            'Disable Dashboard from running.osx_defaults',
            'Enable key repeat.osx_defaults',
            'Enable right click with two finger single tap',
-           'Set computer name',
-           'Set local host name',
            'Enable right click with two finger single tap',
            'Setup screensaver'
 
