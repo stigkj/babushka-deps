@@ -161,7 +161,6 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 
 ## Other stuff
 
-* Look at [gdub](https://github.com/dougborg/gdub)
 * Look at [wifi-password](https://github.com/rauchg/wifi-password)
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
