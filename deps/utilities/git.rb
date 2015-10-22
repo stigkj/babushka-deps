@@ -18,6 +18,13 @@ dep 'git.managed'
 
 dep 'git-up.gem' do
   requires 'Setup Ruby environment'
+
+  met? { shell? 'man -w git-up' }
+  meet {
+    log_block "Installing git-up's man page" do
+      `echo | git up install-man`
+    end
+  }
 end
 
 def all_hooks
