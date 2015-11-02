@@ -3,6 +3,7 @@ dep 'common utilities' do
   requires 'zsh.managed',
            'fasd.managed',
            'git',
+           'mdless.gem',
            'tig.managed',
            'Docker',
            'prezto',
