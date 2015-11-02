@@ -1,0 +1,13 @@
+# Man path
+# --------
+if [[ ! "$MANPATH" =~ "/usr/local/Cellar/fzf/<%= fzf_version %>/man" && -d "/usr/local/Cellar/fzf/<%= fzf_version %>/man" ]]; then
+  export MANPATH="$MANPATH:/usr/local/Cellar/fzf/<%= fzf_version %>/man"
+fi
+
+# Auto-completion
+# ---------------
+[[ $- =~ i ]] && source "/usr/local/Cellar/fzf/<%= fzf_version %>/shell/completion.zsh" 2> /dev/null
+
+# Key bindings
+# ------------
+source "/usr/local/Cellar/fzf/<%= fzf_version %>/shell/key-bindings.zsh"
