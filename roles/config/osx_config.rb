@@ -12,7 +12,7 @@ dep 'OS X config', :for => :osx do
            "Display full POSIX path in Finder's window title.osx_defaults",
            'Enable access for assistive devices',
            'Remove auto-hiding Dock delay.osx_defaults',
-           'Remove animation when hiding or showing the Dock.osx_defaults',
+           'Remove animations',
            'Show all filename extensions in Finder.osx_defaults',
            'Show hidden files by default in Finder.osx_defaults',
            'Show path bar in Finder.osx_defaults',
