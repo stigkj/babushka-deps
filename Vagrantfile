@@ -10,7 +10,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
     v.cpus = 2
+    v.gui = true
   end
 
-  config.vm.box = "jhcook/osx-yosemite-10.10"
+  config.vm.box = "jhcook/osx-elcapitan-10.11"
+
+#  config.vm.provision "shell", path: "init.sh"
 end
