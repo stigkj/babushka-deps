@@ -7,6 +7,7 @@ dep 'common utilities' do
            'Docker',
            'prezto',
            'jq.managed',
+           'proctools.managed',
            'the_silver_searcher.managed',
            'Beyond Compare',
            'Evernote',
