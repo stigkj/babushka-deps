@@ -1,6 +1,9 @@
 dep 'git' do
   requires 'git.managed',
            'git-up.gem',
+           'git-sweep.pip',
+           'git-run.npm',
+           'git-stats.npm',
            # Need that mackup restore has setup hooks before fixing them below
            'mackup'
 
@@ -26,6 +29,12 @@ dep 'git-up.gem' do
     end
   }
 end
+
+dep 'git-sweep.pip'
+
+dep 'git-run.npm'
+
+dep 'git-stats.npm'
 
 def all_hooks
   '~/.git_global/template/hooks/'.p.children

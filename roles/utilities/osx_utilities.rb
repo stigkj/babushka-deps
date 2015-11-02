@@ -4,9 +4,7 @@ dep 'OS X utilities', :for => :osx do
            'appcleaner.cask',
            'choosy.cask',
            'fantastical.cask',
-           'GitX',
-           'iPartition.app',
+           'gitup.cask',
            'iterm2.cask',
-           'kitematic.cask',
            'Stay'
 end
