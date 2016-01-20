@@ -65,16 +65,12 @@ can_install() {
 }
 
 check() {
-  if [ "$interactive" = 'false' ]; then
-    false_with "Sorry, initializing of your machine must be done in an interactive shell."
+  if ! has 'git'; then
+    can_install 'git'
+  elif ! has 'curl'; then
+    can_install 'curl'
   else
-    if ! has 'git'; then
-      can_install 'git'
-    elif ! has 'curl'; then
-      can_install 'curl'
-    else
-      true
-    fi
+    true
   fi
 }
 
@@ -103,19 +99,23 @@ welcome() {
   echo ""
   confirmed=""
 
-  if [ -n "$ZSH_VERSION" ]; then
-    vared -p "Sound good? [y/N] " confirmed
-  elif [ -n "$BASH_VERSION" ]; then
-    read -e -p "Sound good? [y/N] " confirmed
+  if [ "$interactive" = 'false' ]; then
+    true
   else
-    read -p "Sound good? [y/N] " confirmed
-  fi
+    if [ -n "$ZSH_VERSION" ]; then
+      vared -p "Sound good? [y/N] " confirmed
+    elif [ -n "$BASH_VERSION" ]; then
+      read -e -p "Sound good? [y/N] " confirmed
+    else
+      read -p "Sound good? [y/N] " confirmed
+    fi
 
-  case $confirmed in
-    "y"*) true;;
-    "Y"*) true;;
-    *)    false;;
-  esac
+    case $confirmed in
+      "y"*) true;;
+      "Y"*) true;;
+      *)    false;;
+    esac
+  fi
 }
 
 install_pkgs_if_required() {
