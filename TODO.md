@@ -208,6 +208,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
     * Use this client instead? https://github.com/odeke-em/drive
 * Backup online stuff
   - GMail with [Gmvault](http://gmvault.org)
+  - iCloud with [Unclouder](http://mac.eltima.com/backup-icloud.html)
   - Git-repos (Github, Bitbucket, etc) with someting like [gitmirror](https://github.com/dustin/gitmirror)
 
 
