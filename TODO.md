@@ -79,6 +79,13 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Check [digested](http://drivenpixels.com/digested) - imports bookmarks/notes from iBooks into Evernote/a PDF
 * Check [LICEcap](http://www.cockos.com/licecap) - simple animated screen captures in .gif
 * Check [LaunchControl](http://www.soma-zone.com/LaunchControl) - nice launchd GUI
+* http://brettterpstra.com/projects/searchlink/
+* http://brettterpstra.com/projects/nvremind/
+* http://brettterpstra.com/projects/na/
+* http://brettterpstra.com/projects/keybindings/
+* http://brettterpstra.com/projects/doing/
+* http://brettterpstra.com/projects/answered/
+* http://brettterpstra.com/2015/04/27/a-universal-clipboard-command-for-bash/
 * Add [completion of finnbuild](https://gist.github.com/brujoand/f278d55b00014e37a899)
 * git plugins/extensions
   * https://github.com/renard/git-line-history
