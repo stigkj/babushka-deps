@@ -58,6 +58,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * Online editor for evernote https://marxi.co
   * jrnl (http://maebert.github.io/jrnl)
 * Sublime plugins/themes
+  * Docker plugin
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
   * https://github.com/phyllisstein/Pandown
