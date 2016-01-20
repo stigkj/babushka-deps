@@ -139,6 +139,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * What to use for picture handling?
   * http://www.darktable.org
   * https://github.com/photo/frontend
+  * http://emulsionapp.com/
 * Other software for video streaming besides Popcorn time
   * http://www.tribler.org
 * Music streaming
