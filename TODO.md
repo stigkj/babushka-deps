@@ -186,6 +186,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Look at [wifi-password](https://github.com/rauchg/wifi-password)
 * Install all brew cask applications into their own subdirectories (Utilities, Media, etc)
 * Setup sync Exchange calender @work with Google (https://github.com/gdenning/exchange-sync)
+* Look at Planter (http://brettterpstra.com/projects/planter)
 * What to use for email organizing?
   * http://www.inboxvudu.com
 * What to use for backup/sync?
