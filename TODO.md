@@ -50,6 +50,9 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * Folding text
   * Metanota
   *   http://brettterpstra.com/projects/nvalt/
+  * Day one
+    * https://stefanzweifel.io/posts/jawbone-up-to-dayone/
+    * slogger (https://github.com/ttscoff/Slogger)
 * Sublime plugins/themes
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
