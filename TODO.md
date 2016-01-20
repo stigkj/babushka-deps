@@ -54,6 +54,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * Taskpaper
   * Metanota (http://www.metanota.com)
   * http://brettterpstra.com/projects/nvalt/
+  * Sync simplenote <--> evernote (https://simple-for-ever.appspot.com)
 * Sublime plugins/themes
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
