@@ -48,11 +48,12 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * Alternote (http://alternoteapp.com/)
   * Simplenote
   * Folding text
-  * Metanota
-  *   http://brettterpstra.com/projects/nvalt/
   * Day one
     * https://stefanzweifel.io/posts/jawbone-up-to-dayone/
     * slogger (https://github.com/ttscoff/Slogger)
+  * Taskpaper
+  * Metanota (http://www.metanota.com)
+  * http://brettterpstra.com/projects/nvalt/
 * Sublime plugins/themes
   * https://github.com/timonwong/OmniMarkupPreviewer
   * https://github.com/phyllisstein/Sublime-Extended-Tab-Switcher
