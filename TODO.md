@@ -125,6 +125,10 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * https://www.techsmith.com/jing.html
   * https://droplr.com
   * https://evernote.com/skitch
+* Manage bookmarks
+  * Webbla (visual bookmarks http://www.celmaro.com/webbla)
+  * Export from Pinboard into Evernote (use http://derailer.org/paparazzi for saving screenshots of sites)
+  * Create webloc files locally for searching with Spotlight (https://github.com/rjames86/download_pinboard)
 
 ## Media
 
