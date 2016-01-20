@@ -135,6 +135,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Check [Bowtie](http://bowtieapp.com) - see and control your music in iTunes, Spotify, etc
 * Check [Bulkr](http://clipyourphotos.com/bulkr) - backup/download photos/videos from Flickr
 * Check [beets](http://beets.radbox.org) - command-line tool for managing one's music
+* Check [simplify](http://mmth.us/simplify) - remote control of all the music players
 * What to use for picture handling?
   * http://www.darktable.org
   * https://github.com/photo/frontend
