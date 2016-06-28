@@ -1,3 +1,3 @@
 dep 'iPartition.app', :for => :osx do
-  source "file://#{ENV['HOME']}/Dropbox/Software/iPartition-3.4.5.zip"
+  source 'https://coriolis-systems.com/downloads/iPartition-3.5.1.dmg'
 end
