@@ -8,7 +8,7 @@ dep 'Dropbox' do
 end
 
 dep 'Dropbox.app', :for => :osx do
-  source 'https://d1ilhw0800yew8.cloudfront.net/client/Dropbox%202.10.51.dmg'
+  source 'https://www.dropbox.com/download?full=1&plat=mac'
 end
 
 dep 'Dropbox must be initialized before continuing' do
