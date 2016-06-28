@@ -6,15 +6,6 @@ module Babushka
     def pkg_binary; 'brew' end
     def pkg_cmd; 'brew cask' end
     def manager_key; :cask end
-    def manager_dep; 'brew-cask' end
-
-    # The default implementation uses "which pkg_binary" to check if
-    # this package manager is present. Since Homebrew Cask is an add-on
-    # to Homebrew, it's necessary to check if the relevant package is
-    # installed in Homebrew.
-    def present?
-      Babushka::ShellHelpers.shell?("brew list | grep '^#{manager_dep}$'")
-    end
 
     # Delegate prefix to Homebrew helper
     def prefix
