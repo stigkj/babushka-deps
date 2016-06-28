@@ -30,7 +30,7 @@ dep 'repo.my_forked_homebrew' do
     end
   }
   meet {
-    git "git@github.com:stigkj/homebrew.git" do
+    git "git@github.com:stigkj/brew.git" do
       log_shell "Gitifying #{path}", "cp -r .git '#{path}'"
     end
   }
