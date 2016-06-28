@@ -12,7 +12,7 @@ dep 'repo.setup_upstream_in_my_forked_homebrew' do
   requires 'repo.my_forked_homebrew'
   met? { repo.repo_shell('git remote').include? 'upstream' }
   meet { 
-  	repo.repo_shell 'git remote add upstream https://github.com/Homebrew/homebrew.git' do
+  	repo.repo_shell 'git remote add upstream https://github.com/Homebrew/brew.git' do
   		log 'Adding main Homebrew repo as upstream'
   	end
   }
