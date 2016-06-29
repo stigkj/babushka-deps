@@ -30,9 +30,6 @@ def bin_path
 end
 
 def path_to_binaries
-  "#{caskroom}/beyond-compare/4.0.0.18847/Beyond Compare.app/Contents/MacOS/".p
+  "/Applications/Beyond Compare.app/Contents/MacOS/".p
 end
 
-def caskroom
-  "/opt/homebrew-cask/Caskroom".p
-end
