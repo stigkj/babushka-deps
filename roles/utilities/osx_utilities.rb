@@ -1,5 +1,5 @@
 dep 'OS X utilities', :for => :osx do
-  requires '1password.cask',
+  requires '1Password',
            'Alfred',
            'appcleaner.cask',
            'choosy.cask',
