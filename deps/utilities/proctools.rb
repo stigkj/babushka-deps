@@ -1,1 +1,3 @@
-dep 'proctools.managed'
+dep 'proctools.managed' do
+  provides 'pgrep'
+end
