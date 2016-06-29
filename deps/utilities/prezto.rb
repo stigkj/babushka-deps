@@ -45,8 +45,7 @@ dep 'config ok' do
   end
 
   def config_files
-    # TODO should use glob instead, but then each entry must be mapped to a Fancypath
-    "#{ENV['HOME']}/.zprezto/runcoms".p.select 'z*'
+    "#{ENV['HOME']}/.zprezto/runcoms".p.glob('z*').collect {|file| file.p }
   end
 
   def homedir_file_of(file)
