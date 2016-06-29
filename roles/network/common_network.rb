@@ -1,6 +1,6 @@
 dep 'common network' do
   # TODO set into Network dir
   requires 'GoogleChrome',
-           'ngrok.managed',
+           'ngrok.cask',
            'wget.managed'
 end
