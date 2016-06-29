@@ -1,6 +1,6 @@
 dep 'git' do
   requires 'git.managed',
-           'git-up.gem',
+           'git-up',
            'git-sweep.pip',
            'git-run.npm',
            'git-stats.npm',
@@ -19,8 +19,9 @@ end
 
 dep 'git.managed'
 
-dep 'git-up.gem' do
-  requires 'Setup Ruby environment'
+dep 'git-up' do
+  requires 'Setup Ruby environment',
+           'git-up.gem'
 
   met? { shell? 'man -w git-up' }
   meet {
@@ -29,6 +30,8 @@ dep 'git-up.gem' do
     end
   }
 end
+
+dep 'git-up.gem'
 
 dep 'git-sweep.pip'
 
