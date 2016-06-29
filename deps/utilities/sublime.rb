@@ -1,12 +1,12 @@
 dep 'Sublime Text' do
   requires {
-    on :osx, 'sublime-text3.cask'
+    on :osx, 'sublime-text-dev.cask'
     # TODO setup for Linux too
     otherwise { unsupported_platform! }
   }
 end
 
-dep 'sublime-text3.cask', :for => :osx do
+dep 'sublime-text-dev.cask', :for => :osx do
   requires 'caskroom versions'
 end
 
