@@ -1,10 +1,9 @@
-DEFAULT_RUBY_VERSION = '1.9.3'
-DEFAULT_RUBY_VERSION_WITH_PATCH_LEVEL = "#{DEFAULT_RUBY_VERSION}p545"
+DEFAULT_RUBY_VERSION = '2.1.2'
+DEFAULT_RUBY_VERSION_WITH_PATCH_LEVEL = "#{DEFAULT_RUBY_VERSION}p95"
 
 dep 'Setup Ruby environment' do
   requires 'chruby setup',
            'install bundler'.with(ruby_version: DEFAULT_RUBY_VERSION),
-           'install bundler'.with(ruby_version: '2.1.2'),
            'shell must be reloaded to start with correct ruby environment if needed'
 end
 
@@ -16,7 +15,7 @@ end
 dep 'install bundler', :ruby_version do
   requires 'install ruby'.with(version: ruby_version)
 
-  met? { files_exists_matching "~/.gem/ruby/#{ruby_version}/gems/bundler-*/bin/bundler" }
+  met? { files_exists_matching "~/.gem/ruby/#{ruby_version}/gems/bundler-*/*/bundler" }
   meet {
     log_block "Installing bundler for Ruby v#{ruby_version}" do
       shell "source /usr/local/opt/chruby/share/chruby/chruby.sh && chruby #{ruby_version} && gem install bundler"
@@ -66,7 +65,6 @@ def chruby_shell_config
     # Inserted by ruby dependency in Babushka
     source /usr/local/opt/chruby/share/chruby/chruby.sh
     source /usr/local/opt/chruby/share/chruby/auto.sh
-
     chruby #{DEFAULT_RUBY_VERSION}
   EOF
 end
