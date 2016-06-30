@@ -1,6 +1,7 @@
 dep 'Setup ssh' do
   met? {
-    ssh_dir.children.all? { |file| File.world_readable?(file) == nil }
+    ssh_dir.children.all? { |file| File.world_readable?(file) == nil } &&
+    ssh_sockets_dir.exists?
   }
   meet {
     log_block 'Remove world readable permission from ssh files' do
@@ -13,4 +14,8 @@ end
 
 def ssh_dir
   "#{ENV['HOME']}/.ssh".p
+end
+
+def ssh_sockets_dir
+  "#{ENV['HOME']}/.ssh_sockets".p
 end
