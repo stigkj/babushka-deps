@@ -46,12 +46,10 @@ module Babushka
 
     # The place where Homebrew casks are installed.
     #
-    # Currently this uses the default caskroom for Homebrew Cask, which
-    # is "/opt/homebrew-cask/Caskroom".
-    #
-    # TODO: make this determine the real caskroom
+    # Currently this uses the default caskroom for Homebrew Cask,
+    # which is "/usr/local/Caskroom".
     def caskroom
-      "/opt/homebrew-cask/Caskroom".p
+      "/usr/local/Caskroom".p
     end
   end
   end
