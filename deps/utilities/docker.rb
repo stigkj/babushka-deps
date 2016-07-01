@@ -1,9 +1,10 @@
 dep 'Docker' do
-  requires 'docker.managed',
-           'docker-machine.managed',
-           'docker-compose.managed',
-           'docker-swarm.managed'
+  requires 'docker.cask'
 end
+
+dep 'docker.cask'
+
+# OLD STUFF
 
 # Easily manage containers
 dep 'docker.managed'
@@ -33,5 +34,3 @@ def docker_machine_shell_config
     export DOCKER_MACHINE_NAME="dev"
   EOF
 end
-
-# TODO Script called localdocker which opens the local docker VM should be located in path
