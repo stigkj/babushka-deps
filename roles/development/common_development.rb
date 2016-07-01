@@ -1,7 +1,7 @@
 dep 'common development' do
   requires 'Java 8',
            'go-lang',
-           'gradle.managed',
+           'Gradle',
            'groovy.managed',
            'howdoi',
            'iectrl.npm',
