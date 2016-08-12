@@ -1,5 +1,7 @@
 # Utility for recovering files
 #
+# TODO look at the App Store version that I have bought
+#
 # Only have a license for 1.x, can upgrade through this link:
 # https://cleverfiles.cleverbridge.com/881/uurl-vujvgekmta
 #
