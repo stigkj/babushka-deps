@@ -8,10 +8,11 @@ dep 'howdoi.pip'
 
 dep 'howdoi.shell_config' do
   must_include 'HOWDOI_COLORIZE'
-  content_to_append shell_config
+  content_to_append howdoi_shell_config
+
 end
 
-def shell_config
+def howdoi_shell_config
   <<-EOF.unindent
     # Inserted by howdoi dependency in Babushka
     export HOWDOI_COLORIZE=true
