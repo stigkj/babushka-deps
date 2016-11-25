@@ -13,5 +13,6 @@ def google_cloud_sdk_shell_config
     # Inserted by google-cloud-sdk in Babushka
     source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
     source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+    source <(kubectl completion zsh)
   EOF
 end
