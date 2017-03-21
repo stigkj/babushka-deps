@@ -4,6 +4,7 @@ dep 'git' do
            'git-sweep.pip',
            'git-run.npm',
            'git-stats.npm',
+           'diff-so-fancy.npm',
            # Need that mackup restore has setup hooks before fixing them below
            'mackup'
 
@@ -38,6 +39,9 @@ dep 'git-sweep.pip'
 dep 'git-run.npm'
 
 dep 'git-stats.npm'
+
+# TODO add to git config: git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX --pattern '^(Date|added|deleted|modified): '"
+dep 'diff-so-fancy.npm'
 
 def all_hooks
   '~/.git_global/template/hooks/'.p.children
