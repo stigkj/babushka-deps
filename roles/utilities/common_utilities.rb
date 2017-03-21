@@ -7,7 +7,7 @@ dep 'common utilities' do
            'tig.managed',
            'Docker',
            'prezto',
-           'jq.managed',
+           'JSON tools',
            'proctools.managed',
            'the_silver_searcher.managed',
            'Beyond Compare',
