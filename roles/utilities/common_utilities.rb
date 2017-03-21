@@ -9,7 +9,7 @@ dep 'common utilities' do
            'prezto',
            'JSON tools',
            'proctools.managed',
-           'the_silver_searcher.managed',
+           'Search tool',
            'Beyond Compare',
            'Evernote',
            'Sublime Text',
