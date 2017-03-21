@@ -192,6 +192,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * What to use for email organizing?
   * http://www.inboxvudu.com
 * What to use for backup/sync?
+  * https://github.com/silverwind/droppy:
+  * https://pydio.com
   * https://meetlima.com
   * http://git-annex.branchable.com
   * https://ind.ie/pulse
