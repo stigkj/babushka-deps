@@ -32,7 +32,7 @@ dep 'git-up' do
   }
 end
 
-dep 'git-up.gem'
+dep 'git-up.pip'
 
 dep 'git-sweep.pip'
 
