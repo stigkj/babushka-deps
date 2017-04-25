@@ -1,6 +1,9 @@
 dep 'Search tool' do
-  requires 'ripgrep.managed'
+  requires 'sift.managed'
 end
+
+# TODO maybe setup saner defaults in global config?
+dep 'sift.managed'
 
 dep 'ucg.managed'
 
