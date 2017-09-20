@@ -1,4 +1,5 @@
 # Environment switcher for the shell
+# TODO look at smartcd too
 dep 'direnv' do
   requires 'direnv.managed',
            'direnv.shell_config'
