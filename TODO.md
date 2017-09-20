@@ -198,6 +198,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * http://git-annex.branchable.com
   * https://ind.ie/pulse
   * https://sher.ly
+  * https://rclone.org
   * http://camlistore.org
   * BitTorrent Sync (http://www.getsync.com)
   * Syncthing (https://syncthing.net)
