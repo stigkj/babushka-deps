@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.gui = true
   end
 
-  config.vm.box = "jhcook/osx-elcapitan-10.11"
+  config.vm.box = "osx-sierra-0.3.1"
 
 #  config.vm.provision "shell", path: "init.sh"
 end
