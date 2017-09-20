@@ -97,6 +97,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * http://ianyh.com/amethyst
   * http://mjolnir.io
   * http://projects.jga.me/layouts
+  * https://github.com/fikovnik/ShiftIt
 * vim plugins
   * https://github.com/int3/vim-extradite
   * http://sjl.bitbucket.org/gundo.vim
