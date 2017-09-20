@@ -1,4 +1,15 @@
 # A very fast command-line fuzzy finder
+# TODO look at other alternatives: fzy, peco, zaw
+# look at
+# https://github.com/AshyIsMe/fzfOS
+# https://github.com/ggVGc/fzf_browser
+# https://github.com/jamesmclendon/fzfplay
+# https://github.com/b4b4r07/cli-finder
+# https://github.com/kghoon/oh-my-fzf
+# https://github.com/Perlence/dockerfzf
+# https://github.com/rcruzper/dps
+# https://github.com/hikouki/docin
+# https://gist.github.com/chaudum/baa1f4981f30733e12acc21379cf3151 (search history with CTRL-R)
 dep 'fzf' do
   requires 'fzf.managed',
            'fzf.shell_config',
