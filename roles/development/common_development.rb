@@ -1,12 +1,12 @@
 dep 'common development' do
-  requires 'Java 8',
-           'go-lang',
-           'Gradle',
+  requires 'Java',
            'groovy.managed',
-           'howdoi',
-           'iectrl.npm',
+           'go-lang',
+           'Node.js',
+           'ruby',
+           'Gradle',
            'leiningen.managed',
            'maven.managed',
            'IntelliJ IDEA',
-           'ruby'
+           'howdoi'
 end
