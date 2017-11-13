@@ -1,4 +1,4 @@
-dep 'node & npm' do
+dep 'Node.js' do
   requires 'node.managed',
            'yarn',
            'link node binaries into system path to work from GUI apps'
