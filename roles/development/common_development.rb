@@ -5,7 +5,6 @@ dep 'common development' do
            'Node.js',
            'ruby',
            'Gradle',
-           'leiningen.managed',
            'maven.managed',
            'IntelliJ IDEA',
            'howdoi'
