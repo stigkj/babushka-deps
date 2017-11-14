@@ -6,6 +6,5 @@ dep 'Tomcat 7' do
 end
 
 dep 'tomcat7.managed', :for => :osx do
-  requires 'homebrew versions'
   provides 'catalina'
 end

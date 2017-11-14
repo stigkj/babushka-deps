@@ -7,6 +7,6 @@ dep 'Sublime Text' do
 end
 
 dep 'sublime-text-dev.cask', :for => :osx do
-  requires 'caskroom versions'
+  requires 'cask versions'
 end
 

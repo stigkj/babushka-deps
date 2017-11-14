@@ -1,6 +1,6 @@
-# Homebrew installs the stuff you need that Apple didn't
-#
-# http://brew.sh/
+dep 'cask versions' do
+  requires 'homebrew tap'.with('homebrew/cask-versions')
+end
 
 # Ensures a particular Homebrew tap has been "tapped"
 #
