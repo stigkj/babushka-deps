@@ -1,9 +1,13 @@
 dep 'Vim' do
   requires 'vim.managed',
+           'vimr.cask',
            'vim-plug'
 end
 
 dep 'vim.managed'
+
+# Nice VIM/Neovim experience in OS X
+dep 'vimr.cask'
 
 dep 'vim-plug' do
   met? { vim_plug_file.exist? }
