@@ -1,2 +1,2 @@
-# Tool for remotely debugging and testing your JavaScript
-dep 'vorlon.npm'
+# Java reverse engineering suite (decompiling, recompiling, etc)
+# TODO install it from here: https://bytecodeviewer.com
