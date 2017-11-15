@@ -1,4 +1,5 @@
-meta :accessibility_api do
+# This does not work anymore because of SIP, that is, the TCC db is read only.
+meta :accessibility_api_broken do
   accepts_value_for :application, :basename
 
   template {
