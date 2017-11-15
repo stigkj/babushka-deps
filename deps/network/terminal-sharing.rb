@@ -1,10 +1,16 @@
+# Broadcast what you do at the terminal
+dep 'shellshare.managed'
+
+# Quick and easy terminal sharing
+dep 'termshare.managed'
+
 # Share the terminal as a web application
 dep 'gotty' do
   requires 'go-lang'
 
   met? { in_path? 'gotty' }
   meet {
-    log_shell "Installing gooty from source @#{gotty_url}",
+    log_shell "Installing gotty from source @#{gotty_url}",
               "go get #{gotty_url}"
   }
 
