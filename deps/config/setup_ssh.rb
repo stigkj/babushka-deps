@@ -7,9 +7,9 @@ dep 'Setup ssh' do
     log_block 'Remove world readable permission from ssh files' do
       ssh_dir.children.each { |file| file.chmod(0600) }
     end
-    log_shell 'Create directory for sockets', 'mkdir -p .ssh_sockets'
+    log_shell 'Create directory for sockets', "mkdir -p #{ssh_sockets_dir}"
     log_shell 'Add ssh key to agent and keychain', 'ssh-add -K'
-  }  
+  }
 end
 
 def ssh_dir
