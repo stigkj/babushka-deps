@@ -1,1 +1,0 @@
-dep 'tig.managed'
