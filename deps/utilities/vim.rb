@@ -1,4 +1,4 @@
-dep 'Vim' do
+dep 'vim' do
   requires 'vim.managed',
            'vimr.cask',
            'vim-plug'
