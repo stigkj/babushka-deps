@@ -6,6 +6,6 @@ dep 'common development' do
            'ruby',
            'Gradle',
            'maven.managed',
-           'IntelliJ IDEA',
+           'IntelliJ IDEA newest',
            'howdoi'
 end

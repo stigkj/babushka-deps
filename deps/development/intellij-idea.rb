@@ -5,6 +5,4 @@ dep 'IntelliJ IDEA' do
   }
 end
 
-# TODO change memory configuration in plist
-# TODO add 'idea.case.sensitive.fs=true' in IDEA_HOME/bin/idea.properties
 dep 'intellij-idea.cask', :for => :osx
