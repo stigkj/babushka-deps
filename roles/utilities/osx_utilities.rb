@@ -4,6 +4,5 @@ dep 'OS X utilities', :for => :osx do
            'appcleaner.cask',
            'choosy.cask',
            'fantastical.cask',
-           'gitup.cask',
            'iTerm2'
 end

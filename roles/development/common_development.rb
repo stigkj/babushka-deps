@@ -7,5 +7,10 @@ dep 'common development' do
            'Gradle',
            'maven.managed',
            'IntelliJ IDEA newest',
+           'git',
+           'tig.managed',
+           'Docker',
+           'JSON tools',
+           'kafkacat.managed',
            'howdoi'
 end

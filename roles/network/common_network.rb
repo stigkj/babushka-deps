@@ -1,6 +1,11 @@
 dep 'common network' do
-  # TODO set into Network dir
   requires 'GoogleChrome',
-           'ngrok.cask',
+           'http benchmarking',
+           'http cli',
+           'http stats',
+           'http packet capture',
+           'dev web server',
+           'REST client',
+           'tunnelblick.cask',
            'wget.managed'
 end
