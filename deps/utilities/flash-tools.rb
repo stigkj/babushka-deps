@@ -9,5 +9,8 @@
 # chmod +x flash
 # sudo mv flash /usr/local/bin/flash
 
+# Burn images to SD cards & USB drives, safe & easy
+dep 'etcher.cask'
+
 # Burn images to SD cards or other flash based memory nice and easy
 dep 'fwup.managed'
