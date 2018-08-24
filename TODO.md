@@ -81,6 +81,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Check [digested](http://drivenpixels.com/digested) - imports bookmarks/notes from iBooks into Evernote/a PDF
 * Check [LICEcap](http://www.cockos.com/licecap) - simple animated screen captures in .gif
 * Check [LaunchControl](http://www.soma-zone.com/LaunchControl) - nice launchd GUI
+* Check https://github.com/BlueM/cliclick - do GUI mouse/keyboard stuff from cli
 * http://brettterpstra.com/projects/searchlink/
 * http://brettterpstra.com/projects/nvremind/
 * http://brettterpstra.com/projects/na/
