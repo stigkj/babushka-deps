@@ -192,6 +192,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * Look at Planter (http://brettterpstra.com/projects/planter)
 * Look at Übersicht (http://tracesof.net/uebersicht)
 * Set default applications with duti (http://duti.org)
+* Maybe have my own server "in the cloud"?
+  * https://www.hetzner.com/sb
 * What to use for email organizing?
   * http://www.inboxvudu.com
 * What to use for backup/sync?
