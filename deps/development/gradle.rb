@@ -1,22 +1,14 @@
 # Installs gradle and supporting utilities
 dep 'Gradle' do
-  requires 'gradle.managed',
-           'gw'
+  requires 'gradle.asdf',
+           'gdub.managed'
 end
 
-dep 'gradle.managed'
+dep 'gradle.asdf' do
+  version '4.9'
+end
 
-# Gradle wrapper that finds the nearest build.gradle
-dep 'gw' do
-  requires 'go-lang'
-
-  met? { in_path? 'gw' }
-  meet {
-    log_shell "Installing gw from source @#{gw_url}",
-              "go get #{gw_url}"
-  }
-
-  def gw_url
-    'github.com/srs/gw'
-  end
+# Gradle wrapper that finds the nearest build.gradle(.kts)
+dep 'gdub.managed' do
+  provides 'gw'
 end
