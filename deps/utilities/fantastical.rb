@@ -1,2 +1,6 @@
 # Very good calendar app
-dep 'fantastical.cask', :for => :osx
+dep 'Fantastical' do
+  requires 'fantastical.cask'
+end
+
+dep 'fantastical.cask'

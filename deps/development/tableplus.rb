@@ -1,2 +1,6 @@
 # Very nice relational database GUI
-dep 'tableplus.cask', :for => :osx
+dep 'TablePlus' do
+  requires 'tableplus.cask'
+end
+
+dep 'tableplus.cask'

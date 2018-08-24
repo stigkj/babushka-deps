@@ -1,1 +1,5 @@
-dep 'appcleaner.cask', :for => :osx
+dep 'Appcleaner' do
+ requires 'appcleaner.cask'
+end
+
+dep 'appcleaner.cask'
