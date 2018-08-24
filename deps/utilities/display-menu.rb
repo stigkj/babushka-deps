@@ -1,3 +1,8 @@
 # Switch resolutions including native ones
-# App Store id: 549083868
-dep 'display-menu.mas'
+dep 'Display Menu' do
+  requires 'Display Menu.mas'
+end
+
+dep 'Display Menu.mas' do
+  id '549083868'
+end

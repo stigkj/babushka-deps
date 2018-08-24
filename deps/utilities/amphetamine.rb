@@ -1,3 +1,8 @@
 # Keeps my Mac awake
-# App Store id: 937984704
-dep 'amphetamine.mas'
+dep 'Amphetamine' do
+  requires 'Amphetamine.mas'
+end
+
+dep 'Amphetamine.mas' do
+  id '937984704'
+end

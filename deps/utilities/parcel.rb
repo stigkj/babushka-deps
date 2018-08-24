@@ -1,3 +1,8 @@
 # Tracks parcels
-# App Store id: 639968404
-dep 'parcel.mas'
+dep 'Parcel' do
+  requires 'Parcel.mas'
+end
+
+dep 'Parcel.mas' do
+  id '639968404'
+end

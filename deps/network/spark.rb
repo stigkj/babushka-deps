@@ -1,3 +1,8 @@
 # Nice email app
-# App Store id: 1176895641
-dep 'spark.mas'
+dep 'Spark' do
+  requires 'Spark.mas'
+end
+
+dep 'Spark.mas' do
+  id '1176895641'
+end

@@ -1,3 +1,8 @@
 # Very good duplicate photo finder
-# App Store id: 935700987
-dep 'snapselect.mas'
+dep 'SnapSelect' do
+  require 'SnapSelect.mas'
+end
+
+dep 'SnapSelect.mas' do
+  id '937984704'
+end

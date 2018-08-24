@@ -1,3 +1,8 @@
 # Powerful image editor
-# Apple Store id: 407963104
-dep 'pixelmator.mas'
+dep 'Pixelmator' do
+  requires 'Pixelmator.mas'
+end
+
+dep 'Pixelmator.mas' do
+  id '407963104'
+end
