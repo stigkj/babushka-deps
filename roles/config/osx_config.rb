@@ -23,7 +23,6 @@ dep 'OS X config', :for => :osx do
            'Disable Dashboard from running.osx_defaults',
            'Enable key repeat.osx_defaults',
            'Enable right click with two finger single tap',
-           'Enable right click with two finger single tap',
            'Setup screensaver'
 
   met? { marker_file.exists? }
