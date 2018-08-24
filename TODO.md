@@ -35,6 +35,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
     * https://github.com/olivierverdier/zsh-git-prompt
     * http://www.paradox.io/posts/9-my-new-zsh-prompt
     * http://omarriott.com/aux/zsh-prezto-git-dirty-info/
+    * https://github.com/yedhink/bashed-on-a-feeling
   * Other stuff
     * http://natelandau.com/my-mac-osx-bash_profile/
     * http://jeromedalbert.com/migrate-from-oh-my-zsh-to-prezto/
