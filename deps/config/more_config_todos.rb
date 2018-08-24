@@ -1,5 +1,7 @@
 # TODO
 
+# Turn off shortcut for input sources (Ctrl-Space)
+
 #Start the status bar Path at $HOME (instead of Hard drive)
 #$ defaults write /Library/Preferences/com.apple.finder PathBarRootAtHome -bool
 
