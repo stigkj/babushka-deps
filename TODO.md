@@ -195,6 +195,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * What to use for email organizing?
   * http://www.inboxvudu.com
 * What to use for backup/sync?
+  * https://owncloud.org
+  * https://nextcloud.com
   * https://github.com/silverwind/droppy:
   * https://pydio.com
   * https://meetlima.com
@@ -202,16 +204,20 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * https://ind.ie/pulse
   * https://sher.ly
   * https://rclone.org
+  * http://www.hashbackup.com
+  * https://restic.github.io
   * http://camlistore.org
-  * BitTorrent Sync (http://www.getsync.com)
+  * BitTorrent Sync (https://www.resilio.com)
   * Syncthing (https://syncthing.net)
   * http://www.odrive.com
-  * http://new.odrive.com/fileserver
   * https://github.com/syncany/syncany
   * http://www.soma-zone.com/BackupLoupe - client for Time Machine
   * http://timesoftware.free.fr/timemachineeditor - edit Time Machine backup intervals
+  * https://www.morrodata.com
+  * https://duplicacy.com
   * Google Drive
     * Use this client instead? https://github.com/odeke-em/drive
+  * Backblaze B2
 * Backup online stuff
   - GMail with 
     - [Gmvault](http://gmvault.org)
