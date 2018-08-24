@@ -221,7 +221,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
     * Use this client instead? https://github.com/odeke-em/drive
   * Backblaze B2
 * Backup online stuff
-  - GMail with 
+  - Backup up "everything" with https://github.com/johnjones4/Doomsday-Machine-2
+  - GMail with
     - [Gmvault](http://gmvault.org)
     - http://lifehacker.com/235207/geek-to-live--back-up-gmail-with-fetchmail
     - https://github.com/jay0lee/got-your-back
