@@ -1,11 +1,11 @@
 dep 'common development' do
   requires 'Java',
-           'groovy.managed',
+           'Groovy',
            'go-lang',
            'Node.js',
            'ruby',
            'Gradle',
-           'maven.managed',
+           'Maven',
            'IntelliJ IDEA newest',
            'git',
            'tig.managed',
