@@ -9,6 +9,8 @@ dep 'common development' do
            'IntelliJ IDEA newest',
            'git',
            'tig.managed',
+           'Google Cloud SDK',
+           'Kubernetes CLI',
            'Docker',
            'JSON tools',
            'kafkacat.managed',

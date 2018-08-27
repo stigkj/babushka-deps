@@ -1,7 +1,10 @@
 # Installs the Google cloud SDK, including the gcloud tool
-dep 'google-cloud-sdk.cask', :for => :osx do
-  requires 'google-cloud-sdk.shell_config'
+dep 'Google Cloud SDK' do
+  requires 'google-cloud-sdk.cask',
+           'google-cloud-sdk.shell_config'
 end
+
+dep 'google-cloud-sdk.cask'
 
 dep 'google-cloud-sdk.shell_config' do
   must_include 'google-cloud-sdk'

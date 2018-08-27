@@ -1,6 +1,3 @@
-# Tail several Kubernetes pods at once
-dep 'k8stail.managed'
-
 # Tail several files from several machines as once
 dep 'ctail.managed'
 
