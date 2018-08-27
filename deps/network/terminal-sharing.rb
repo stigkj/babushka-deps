@@ -4,6 +4,9 @@ dep 'shellshare.managed'
 # Quick and easy terminal sharing
 dep 'termshare.managed'
 
+# Share the terminal via ssh or https
+dep 'teleconsole.managed'
+
 # Share the terminal as a web application
 dep 'gotty' do
   requires 'go-lang'
