@@ -1,12 +1,12 @@
-dep 'Junos Pulse' do
-  requires 'JunosPulse.installer',
+dep 'Pulse Secure' do
+  requires 'PulseSecure.installer',
            'Create VPN check file'
 end
 
-dep 'JunosPulse.installer', :for => :osx do
-  source "file://#{ENV['HOME']}/Dropbox/Software/JunosPulse313.dmg"
+dep 'PulseSecure.installer', :for => :osx do
+  source "file://#{ENV['HOME']}/Dropbox/Software/ps-pulse-mac-5.2r5.0-b869-installer.dmg"
   met? {
-    '/Applications/Junos Pulse.app'.p.exist?
+    '/Applications/Pulse Secure.app'.p.exist?
   }
 end
 
