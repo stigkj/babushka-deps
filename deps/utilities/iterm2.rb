@@ -1,9 +1,9 @@
 dep 'iTerm2' do
-  requires 'iterm2.cask',
+  requires 'iterm2-nightly.cask',
            'iterm2.shell_config'
 end
 
-dep 'iterm2.cask', :for => :osx
+dep 'iterm2-nightly.cask', :for => :osx
 
 dep 'iterm2.shell_config' do
   must_include '.iterm2_shell_integration.'
