@@ -22,11 +22,6 @@ module Babushka
     def pkg_cmd; 'brew cask' end
     def manager_key; :cask end
 
-    # Delegate prefix to Homebrew helper
-    def s_prefix
-      Babushka::BrewHelper.prefix
-    end
-
     def has_pkg? pkg
       pkg_name = pkg.respond_to?(:name) ? pkg.name : pkg
       !Babushka::ShellHelpers.shell("brew cask info #{pkg_name}").include? 'Not installed'
