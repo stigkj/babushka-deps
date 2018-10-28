@@ -1,7 +1,7 @@
 dep 'OS X network', :for => :osx do
   requires 'Junos Pulse',
            'Browsers',
-           'mailplane.cask',
+           'Mail client',
            'ngrok.cask',
            'slack.cask'
 end
