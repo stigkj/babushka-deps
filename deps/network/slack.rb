@@ -1,2 +1,6 @@
 # Platform for team communication
-dep 'slack.cask', :for => :osx
+dep 'Slack' do
+  requires 'slack.cask'
+end
+
+dep 'slack.cask'

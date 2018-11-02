@@ -1,2 +1,6 @@
 # Tunnel localhost onto the big internet
-dep 'ngrok.cask', :for => :osx
+dep 'ngrok' do
+  requires 'ngrok.cask'
+end
+
+dep 'ngrok.cask'
