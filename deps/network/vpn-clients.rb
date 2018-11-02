@@ -1,3 +1,13 @@
+dep 'VPN clients' do
+  requires 'tunnelblick.cask'
+end
+
+# OpenVPN client
+dep 'tunnelblick.cask'
+
+# Easy and free VPN
+dep 'tunnelbear.cask'
+
 dep 'Pulse Secure' do
   requires 'PulseSecure.installer',
            'Create VPN check file'
@@ -24,3 +34,4 @@ dep 'Create VPN check file' do
     '/private/etc/aft/mac.check'.p
   end
 end
+
