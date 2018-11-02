@@ -1,4 +1,4 @@
-dep 'REST client' do
+dep 'REST clients' do
   requires 'Paw',
            'insomnia.cask'
 end
