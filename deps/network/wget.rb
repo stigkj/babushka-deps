@@ -1,1 +1,0 @@
-dep 'wget.managed'
