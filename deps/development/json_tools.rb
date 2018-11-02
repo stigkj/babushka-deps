@@ -1,6 +1,6 @@
 dep 'JSON tools' do
   requires 'jq.managed',
-           'jid',
+           'jid.managed',
            'gron.managed'
 end
 
@@ -8,10 +8,7 @@ end
 dep 'jq.managed'
 
 # An interactive jq
-dep 'jid' do
-  requires 'homebrew tap'.with('simeji/jid')
-  requires 'jid.managed'
-end
+dep 'jid.managed'
 
 # "Flattens" json to make it easily searchable with grep, etc.
 dep 'gron.managed'
