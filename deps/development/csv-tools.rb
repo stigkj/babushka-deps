@@ -6,5 +6,5 @@ dep 'q.managed'
 # https://github.com/BurntSushi/xsv
 dep 'xsv.managed'
 
-#https://github.com/wireservice/csvkit
+# https://github.com/wireservice/csvkit
 dep 'csvkit.pip'
