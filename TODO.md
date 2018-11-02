@@ -36,6 +36,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
     * http://www.paradox.io/posts/9-my-new-zsh-prompt
     * http://omarriott.com/aux/zsh-prezto-git-dirty-info/
     * https://github.com/yedhink/bashed-on-a-feeling
+    * https://github.com/denysdovhan/spaceship-prompt
   * Other stuff
     * http://natelandau.com/my-mac-osx-bash_profile/
     * http://jeromedalbert.com/migrate-from-oh-my-zsh-to-prezto/
@@ -45,6 +46,8 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
     * http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
     * http://mikebuss.com/2014/04/07/customizing-prezto/
     * https://github.com/chilicuil/shundle
+    * https://github.com/atomantic/dotfiles
+    * https://github.com/ellipsis/ellipsis
     * Use vim mode for editing on the cli
 * Switch to simple editor (should sync with Evernote + handle Markdown)
   * Alternote (http://alternoteapp.com/)
