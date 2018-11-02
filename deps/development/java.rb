@@ -1,12 +1,20 @@
 dep 'Java' do
-  requires {
-    on :osx, 'java.cask, java8.cask'
-    otherwise { unsupported_platform! }
-  }
+  requires 'java8.asdf',
+           'java10.asdf',
+           'java11.asdf'
 end
 
-dep 'java.cask', :for => :osx
+dep 'java8.asdf' do
+  installs 'java'
+  version '8'
+end
 
-dep 'java8.cask', :for => :osx do
-  requires 'caskroom versions'
+dep 'java10.asdf' do
+  installs 'java'
+  version '10'
+end
+
+dep 'java11.asdf' do
+  installs 'java'
+  version '11'
 end

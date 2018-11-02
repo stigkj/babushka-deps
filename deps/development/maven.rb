@@ -1,7 +1,7 @@
 dep 'Maven' do
-  requires 'maven.managed'
+  requires 'maven.asdf'
 end
 
-dep 'maven.managed' do
-  provides 'mvn'
+dep 'maven.asdf' do
+  version '3.6.0'
 end
