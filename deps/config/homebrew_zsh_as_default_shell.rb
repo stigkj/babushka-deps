@@ -1,5 +1,5 @@
 dep 'Homebrew zsh as default shell' do
-  requires 'zsh.managed',
+  requires 'zsh',
            'Add Homebrew zsh to legal shells'
 
   met? { shell("dscl . -read /Users/#{ENV['USER']} UserShell").include? homebrew_zsh_location }

@@ -1,9 +1,9 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
-  requires 'zsh.managed',
            'fasd.managed',
            'proctools.managed',
            'Search tool',
+  requires 'zsh',
            'Beyond Compare',
            'Evernote',
            'Sublime Text',
