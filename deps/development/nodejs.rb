@@ -1,33 +1,23 @@
 dep 'Node.js' do
-  requires 'node.managed',
-           'yarn',
-           'link node binaries into system path to work from GUI apps'
+  requires 'nodejs.asdf',
+           'yarn.binary'
 end
 
-dep 'node.managed'
-
-dep 'yarn' do
-  requires 'yarn.managed',
-           'yarn.shell_config'
+dep 'nodejs.asdf' do
+  version '9.11.2'
 end
 
-dep 'yarn.managed'
-dep 'yarn.shell_config' do
-  must_include yarn_deps_bin_path
-  content_to_append yarn_shell_config
+dep 'yarn.binary' do
+  requires 'nodejs.asdf'
+
+  met? { in_path? 'yarn' }
+  meet {
+    log_shell 'Installing yarn without nodejs',
+              'brew install yarn --without-node'
+  }
 end
 
-def yarn_shell_config
-  <<-EOF.unindent
-    # Inserted by yarn dependency in Babushka
-    export PATH=$PATH:#{yarn_deps_bin_path}
-  EOF
-end
-
-def yarn_deps_bin_path
-  '~/.config/yarn/global/node_modules/.bin'.p
-end
-
+# TODO Cannot be done like this anymore as node is now installed through asdf. Disable for now.
 # This is needed as PATH is not set properly in GUI apps, only a few of them, like /usr/bin
 dep 'link node binaries into system path to work from GUI apps' do
   met? { binaries.all? { |binary| "#{bin_path}/#{binary}".p.exists? } }
