@@ -1,8 +1,8 @@
 # Very good duplicate photo finder
-dep 'SnapSelect' do
-  require 'SnapSelect.mas'
+dep 'Snapselect' do
+  requires 'Snapselect.mas'
 end
 
-dep 'SnapSelect.mas' do
-  id '937984704'
+dep 'Snapselect.mas' do
+  id '935700987'
 end
