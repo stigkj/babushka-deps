@@ -1,7 +1,12 @@
 # Some zookeeper tools
 
 # Nice cli for ZooKeeper; installed with go get
+# https://github.com/let-us-go/zkcli
 dep 'zkcli.go'
+
+# Unix friendly zk shell
+# https://github.com/mmcgrana/zk
+dep 'zk.go'
 
 # A cli and scriptable shell
 # https://github.com/rgs1/zk_shell
