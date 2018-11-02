@@ -6,8 +6,11 @@
 # https://github.com/thenewwazoo/bash-history-sqlite
 # https://github.com/joshuacronemeyer/shellsink
 # https://github.com/andmarios/bashistdb
+# https://github.com/larkery/zsh-histdb
 
 # Looks like this is the best
 # https://github.com/barabo/advanced-shell-history
+
+# Also look at selfspy (another tool having its own setup file: selfspy.rb)
 
 dep 'his.managed'
