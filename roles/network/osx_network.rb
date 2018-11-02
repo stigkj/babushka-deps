@@ -1,7 +1,7 @@
 dep 'OS X network', :for => :osx do
-  requires 'Junos Pulse',
+  requires 'Pulse Secure',
            'Browsers',
            'Mail client',
-           'ngrok.cask',
-           'slack.cask'
+           'Slack',
+           'ngrok'
 end

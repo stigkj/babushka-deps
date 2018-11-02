@@ -1,7 +1,8 @@
 # These dependencies must be installed and initialized before installing anything else
 dep 'init' do
-  requires 'Dropbox',
+  requires 'Check HD is in case-sensitive encrypted APFS format',
+           'Init machine for real user',
+           'Dropbox',
            'mackup',
-           'Setup ssh',
-           'Convert HD to case-sensitive format'
+           'Setup ssh'
 end

@@ -1,11 +1,17 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
-           'fasd.managed',
-           'proctools.managed',
-           'Search tool',
   requires 'zsh',
+           'cheat',
+           'Enhanced cd',
+           'Fuzzy list lookup',
+           'direnv',
+           'codemod',
+           'prez',
+           'proctools',
+           'Search tools',
            'Beyond Compare',
            'Evernote',
+           'Alternote',
            'Sublime Text',
            'vim'
 end

@@ -1,6 +1,8 @@
 dep 'OS X media', :for => :osx do
-  requires 'beamer.cask',
-           'minitube.cask',
-           'imageoptim.cask',
-           'Canon PIXMA iP7250.installer'
+  requires 'Beamer',
+           'Minitube',
+           'Image optimization',
+           'Pixelmator',
+           'Snapselect',
+           'Printer drivers'
 end
