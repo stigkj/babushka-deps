@@ -5,6 +5,7 @@ meta :asdf do
 
   template do
     requires 'asdf.managed'
+             'asdf.shell_config_ext'
 
     met? {
       shell("asdf list #{installs} || echo not_installed").include? version
@@ -17,3 +18,11 @@ meta :asdf do
 end
 
 dep 'asdf.managed'
+
+dep 'asdf.shell_config_ext' do
+  content <<-EOF.unindent
+      asdf_dir=/usr/local/Cellar/asdf/0.5.1
+
+      zplug "stigkj/asdf.plugin.zsh", defer:2
+    EOF
+end
