@@ -1,9 +1,6 @@
 dep 'IntelliJ IDEA newest' do
   requires 'homebrew tap'.with('stigkj/personal')
-  requires {
-    on :osx, 'intellij-idea-newest.cask'
-    otherwise { unsupported_platform! }
-  }
+  requires 'intellij-idea-newest.cask'
 end
 
-dep 'intellij-idea-newest.cask', :for => :osx
+dep 'intellij-idea-newest.cask'
