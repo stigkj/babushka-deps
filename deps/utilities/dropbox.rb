@@ -1,13 +1,9 @@
 dep 'Dropbox' do
-  requires {
-    on :osx, 'Dropbox.app'
-    # TODO setup for Linux too
-    otherwise { unsupported_platform! }
-  }
+  requires 'Dropbox.app'
   requires 'Dropbox must be initialized before continuing'
 end
 
-dep 'Dropbox.app', :for => :osx do
+dep 'Dropbox.app' do
   source 'https://www.dropbox.com/download?full=1&plat=mac'
 end
 

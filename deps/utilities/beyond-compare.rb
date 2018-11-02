@@ -1,10 +1,6 @@
 dep 'Beyond Compare' do
-  requires {
-    on :osx, 'beyond-compare.cask'
-    # TODO setup for Linux too
-    otherwise { unsupported_platform! }
-  }
-  requires 'put BCompare and bcomp in path'
+  requires 'beyond-compare.cask',
+           'put BCompare and bcomp in path'
 end
 
 dep 'beyond-compare.cask', :for => :osx
@@ -26,10 +22,10 @@ end
 
 # We assume babushka's method for finding a directory that is in path is ok
 def bin_path
-  "/usr/local/bin".p
+  '/usr/local/bin'.p
 end
 
 def path_to_binaries
-  "/Applications/Beyond Compare.app/Contents/MacOS/".p
+  '/Applications/Beyond Compare.app/Contents/MacOS/'.p
 end
 

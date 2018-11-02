@@ -1,2 +1,6 @@
 # Youtube player
-dep 'minitube.cask', :for => :osx
+dep 'Minitube' do
+  requires 'minitube.cask'
+end
+
+dep 'minitube.cask'
