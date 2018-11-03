@@ -32,7 +32,7 @@ dep 'Create user' do
   }
   meet {
     log_shell "Creating user #{user_name}",
-              "sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password - -home /Volumes/#{user_name} -admin", :sudoe => true
+              "sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password - -home /Volumes/#{user_name} -admin", :sudo => true
   }
 end
 
