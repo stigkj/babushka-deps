@@ -31,8 +31,10 @@ dep 'Create user' do
     shell('dscl . list /Users').include? user_name
   }
   meet {
-    log_shell "Creating user #{user_name}",
-              "sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password - -home /Volumes/#{user_name} -admin", :sudo => true
+    log_block "Creating user #{user_name}" do
+      password = Babushka::Prompt.get_value("the password", {})
+      shell("sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password #{password} -home /Volumes/#{user_name} -admin", :sudo => true)
+    end
   }
 end
 
@@ -41,6 +43,6 @@ dep 'Switch to real user to continue' do
     shell('whoami') == user_name
   }
   meet {
-    Babushka::Prompt.confirm("Switch to user #{user_name} and start babushka again", :default => 'y')
+    confirm("Switch to user #{user_name} and start babushka again", :default => 'y')
   }
 end
