@@ -140,6 +140,13 @@ install_pkgs_if_required() {
   fi
 }
 
+cleanup_old_install() {
+  echo ""
+  echo "Then we will cleanup old leftovers"
+  echo ""
+  rm -rf $to
+}
+
 clone_() {
   echo ""
   echo "Then we will clone our git project."
@@ -170,6 +177,7 @@ setup() {
 
 do_bootstrap() {
   install_pkgs_if_required &&
+  cleanup_old_install &&
   clone_ &&
   on_clone_success || on_clone_failure &&
   setup
