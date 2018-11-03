@@ -15,8 +15,9 @@ dep 'vim-plug' do
     vim_plug_file.parent.mkdir
     Babushka::Resource.download 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim', vim_plug_file
   }
+
+  def vim_plug_file
+    "#{ENV['HOME']}/.vim/autoload/plug.vim".p
+  end
 end
 
-def vim_plug_file
-  "#{ENV['HOME']}/.vim/autoload/plug.vim".p
-end

@@ -15,6 +15,6 @@ meta :shell_config_ext do
   }
 
   def local_file
-    zplug_local_dir / "#{application}.zsh"
+    "~/.zplug/local/#{application}.zsh".p
   end
 end

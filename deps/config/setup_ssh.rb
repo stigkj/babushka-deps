@@ -10,12 +10,12 @@ dep 'Setup ssh' do
     log_shell 'Create directory for sockets', "mkdir -p #{ssh_sockets_dir}"
     log_shell 'Add ssh key to agent and keychain', 'ssh-add -K'
   }
-end
 
-def ssh_dir
-  "#{ENV['HOME']}/.ssh".p
-end
+  def ssh_dir
+    "#{ENV['HOME']}/.ssh".p
+  end
 
-def ssh_sockets_dir
-  "#{ENV['HOME']}/.ssh_sockets".p
+  def ssh_sockets_dir
+    "#{ENV['HOME']}/.ssh_sockets".p
+  end
 end

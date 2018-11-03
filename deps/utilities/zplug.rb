@@ -1,3 +1,6 @@
+zplug_home = '~/.zplug'.p
+zplug_local_dir = zplug_home / 'local'
+
 # A nice plugin manager for zsh
 dep 'zplug' do
   requires 'zsh.managed'
@@ -38,12 +41,4 @@ dep 'zplug local dir' do
       zplug_local_dir.mkdir
     end
   }
-end
-
-def zplug_local_dir
-  zplug_home / 'local'
-end
-
-def zplug_home
-  '~/.zplug'.p
 end

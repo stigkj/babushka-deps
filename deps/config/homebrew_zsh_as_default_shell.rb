@@ -1,3 +1,5 @@
+homebrew_zsh_location = '/usr/local/bin/zsh'
+
 dep 'Homebrew zsh as default shell' do
   requires 'zsh',
            'Add Homebrew zsh to legal shells'
@@ -13,8 +15,4 @@ dep 'Add Homebrew zsh to legal shells' do
               "echo #{homebrew_zsh_location} >> /etc/shells",
               :sudo => true
   }
-end
-
-def homebrew_zsh_location
-  '/usr/local/bin/zsh'
 end

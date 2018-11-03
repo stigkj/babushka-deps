@@ -30,12 +30,32 @@ end
 
 dep 'Setup auto_master.write_as_root' do
   file_name auto_master_file
-  content auto_master_content
+  content <<-EOF.unindent
+    #
+    # Automounter master map
+    #
+    /-                auto_users
+    +auto_master      # Use directory service
+    /net              -hosts              -nobrowse,hidefromfinder,nosuid
+    /home             auto_home           -nobrowse,hidefromfinder
+    /Network/Servers  -fstab
+    /-                -static
+  EOF
+
+  def auto_master_file
+    '/etc/auto_master'.p
+  end
 end
 
 dep 'Setup auto_users.write_as_root' do
   file_name auto_users_file
-  content auto_users_content
+  content <<-EOF.unindent
+    /users    -fstype=zfs    tank/users
+  EOF
+
+  def auto_users_file
+    '/etc/auto_users'.p
+  end
 end
 
 dep 'Create zfs pool and filesystem' do
@@ -47,32 +67,4 @@ dep 'Create zfs pool and filesystem' do
     puts 'sudo zfs set mountpoint=/Users tank/users'
     Babushka::Prompt.confirm('Do the stuff above manually before resuming', :default => 'y')
   }
-end
-
-def auto_master_file
-  '/etc/auto_master'.p
-end
-
-def auto_users_file
-  '/etc/auto_users'.p
-end
-
-def auto_master_content
-  <<-EOF.unindent
-    #
-    # Automounter master map
-    #
-    /-                auto_users
-    +auto_master      # Use directory service
-    /net              -hosts              -nobrowse,hidefromfinder,nosuid
-    /home             auto_home           -nobrowse,hidefromfinder
-    /Network/Servers  -fstab
-    /-                -static
-  EOF
-end
-
-def auto_users_content
-  <<-EOF.unindent
-    /users    -fstype=zfs    tank/users
-  EOF
 end

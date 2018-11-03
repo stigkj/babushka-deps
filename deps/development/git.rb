@@ -35,6 +35,10 @@ dep 'git hooks' do
       all_hooks.each { |filename| shell "chmod +x #{filename}" }
     end
   }
+
+  def all_hooks
+    '~/.git_global/template/hooks/'.p.children
+  end
 end
 
 dep 'git-up' do
@@ -67,8 +71,4 @@ dep 'diff-so-fancy.managed' do
     log_shell "Installing #{basename} into git config",
               %(git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX --pattern '^(Date|added|deleted|modified): '")
   }
-end
-
-def all_hooks
-  '~/.git_global/template/hooks/'.p.children
 end

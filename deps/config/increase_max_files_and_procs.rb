@@ -6,24 +6,7 @@ end
 
 dep 'Increase maxfiles limit.launchd_plist' do
   launchd_plist_file maxfiles_plist_file
-  content_to_append maxfiles_plist_content
-end
-
-dep 'Increase maxproc limit.launchd_plist' do
-  launchd_plist_file maxproc_plist_file
-  content_to_append maxproc_plist_content
-end
-
-def maxfiles_plist_file
-  '/Library/LaunchDaemons/limit.maxfiles.plist'.p
-end
-
-def maxproc_plist_file
-  '/Library/LaunchDaemons/limit.maxproc.plist'.p
-end
-
-def maxfiles_plist_content
-  <<-EOF.unindent
+  content_to_append <<-EOF.unindent
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <!-- Created by Babushka -->
@@ -46,10 +29,15 @@ def maxfiles_plist_content
       </dict>
     </plist>
   EOF
+
+  def maxfiles_plist_file
+    '/Library/LaunchDaemons/limit.maxfiles.plist'.p
+  end
 end
 
-def maxproc_plist_content
-  <<-EOF.unindent
+dep 'Increase maxproc limit.launchd_plist' do
+  launchd_plist_file maxproc_plist_file
+  content_to_append <<-EOF.unindent
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <!-- Created by Babushka -->
@@ -72,6 +60,10 @@ def maxproc_plist_content
       </dict>
     </plist>
   EOF
+
+  def maxproc_plist_file
+    '/Library/LaunchDaemons/limit.maxproc.plist'.p
+  end
 end
 
 meta :launchd_plist do

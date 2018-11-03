@@ -1,3 +1,6 @@
+user_name = 'stiklepp'
+home_dir = "/Volumes/#{user_name}".p
+
 dep 'Init machine for real user' do
   requires 'Create home dir',
            'Init APFS volume for user',
@@ -40,12 +43,4 @@ dep 'Switch to real user to continue' do
   meet {
     Babushka::Prompt.confirm("Switch to user #{user_name} and start babushka again", :default => 'y')
   }
-end
-
-def home_dir
-  "/Volumes/#{user_name}".p
-end
-
-def user_name
-  'stiklepp'
 end
