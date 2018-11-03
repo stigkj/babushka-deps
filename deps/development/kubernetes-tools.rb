@@ -1,6 +1,5 @@
 dep 'Kubernetes tools' do
   requires 'Kubernetes CLI',
-           'kube-cluster.cask',
            'kubectx.binary',
            'stern.managed'
 end
