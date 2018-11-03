@@ -144,7 +144,7 @@ cleanup_old_install() {
   echo ""
   echo "Then we will cleanup old leftovers"
   echo ""
-  rm -rf $to
+  sudo rm -rf $to
 }
 
 clone_() {
