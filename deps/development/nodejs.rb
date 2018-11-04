@@ -4,8 +4,13 @@ dep 'Node.js' do
 end
 
 dep 'nodejs.asdf' do
+  requires 'coreutils.managed',
+           'gpg.managed'
+
   version '9.11.2'
 end
+dep 'coreutils.managed'
+dep 'gpg.managed'
 
 dep 'yarn.binary' do
   requires 'nodejs.asdf'
