@@ -5,12 +5,16 @@ end
 
 dep 'nodejs.asdf' do
   requires 'coreutils.managed',
-           'gpg.managed'
+           'gnupg.managed'
 
   version '9.11.2'
 end
-dep 'coreutils.managed'
-dep 'gpg.managed'
+dep 'coreutils.managed' do
+  provides 'gcat'
+end
+dep 'gnupg.managed' do
+  provides 'gpg'
+end
 
 dep 'yarn.binary' do
   requires 'nodejs.asdf'
