@@ -10,7 +10,7 @@ dep 'common development' do
            'git',
            'Google Cloud SDK',
            'Kubernetes tools',
-           'Docker',
+           'Docker tools',
            'JSON tools',
            'CSV tools',
            'Jetty runner',
