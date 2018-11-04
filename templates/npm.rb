@@ -9,6 +9,8 @@ meta :npm do
     meet {
       log_shell "Installing #{basename}",
                 "npm install -g #{basename}"
+      log_shell "Putting #{basename} in $PATH",
+                'asdf reshim nodejs'
     }
   end
 end
