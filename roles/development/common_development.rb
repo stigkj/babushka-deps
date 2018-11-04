@@ -3,6 +3,7 @@ dep 'common development' do
            'Groovy',
            'Node.js',
            'ruby',
+           'elm',
            'Gradle',
            'Maven',
            'IntelliJ IDEA newest',
