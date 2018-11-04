@@ -1,5 +1,5 @@
 dep 'Java' do
-  requires 'java.managed',
+  requires 'java.cask',
            'java8.asdf',
            'java10.asdf',
            'java11.asdf'
