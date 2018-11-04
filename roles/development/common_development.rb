@@ -12,5 +12,6 @@ dep 'common development' do
            'Docker',
            'JSON tools',
            'kafkacat.managed',
+           'CSV tools',
            'howdoi'
 end

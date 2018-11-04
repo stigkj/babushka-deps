@@ -1,4 +1,9 @@
 # Nice csv tools
+dep 'CSV tools' do
+  requires 'q.managed',
+           'xsv.managed',
+           'csvkit.managed'
+end
 
 # Use SQL-like queries against tabular text files (CSV, etc)
 dep 'q.managed'
@@ -7,4 +12,4 @@ dep 'q.managed'
 dep 'xsv.managed'
 
 # https://github.com/wireservice/csvkit
-dep 'csvkit.pip'
+dep 'csvkit.managed'
