@@ -8,7 +8,7 @@ meta :go do
     met? { in_path? basename }
     meet {
       log_shell "Installing #{basename} from #{github}",
-                "go get #{basename}"
+                "go get #{github}"
       log_shell "Putting #{basename} in $PATH",
                 'asdf reshim golang'
     }
