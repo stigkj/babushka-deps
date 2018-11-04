@@ -4,7 +4,7 @@ meta :asdf do
   accepts_value_for :version
 
   template do
-    requires 'asdf.managed'
+    requires 'asdf installer',
              'asdf.shell_config_ext'
 
     met? {
@@ -17,11 +17,22 @@ meta :asdf do
   end
 end
 
-dep 'asdf.managed'
+dep 'asdf installer' do
+  met? { asdf_home.exists? }
+  meet {
+    log_block 'Installing asdf' do
+      git 'https://github.com/asdf-vm/asdf', :branch => 'v0.6.0', :to => asdf_home
+    end
+  }
+
+  def asdf_home
+    "#{ENV['HOME']}/.asdf".p
+  end
+end
 
 dep 'asdf.shell_config_ext' do
   content <<-EOF.unindent
-      asdf_dir=/usr/local/Cellar/asdf/0.5.1
+      asdf_dir=~/.asdf
 
       zplug "stigkj/asdf.plugin.zsh", defer:2
     EOF
