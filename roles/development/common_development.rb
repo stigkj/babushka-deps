@@ -11,7 +11,7 @@ dep 'common development' do
            'Kubernetes tools',
            'Docker',
            'JSON tools',
-           'kafkacat.managed',
            'CSV tools',
+           'kafkacat',
            'howdoi'
 end
