@@ -1,8 +1,12 @@
 dep 'Java' do
-  requires 'java8.asdf',
+  requires 'java.managed',
+           'java8.asdf',
            'java10.asdf',
            'java11.asdf'
 end
+
+# OS X needs a regularly installed jdk also
+dep 'java.managed'
 
 dep 'java8.asdf' do
   installs 'java'
