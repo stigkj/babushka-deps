@@ -6,7 +6,7 @@ dep 'Java' do
 end
 
 # OS X needs a regularly installed jdk also
-dep 'java.managed'
+dep 'java.cask'
 
 dep 'java8.asdf' do
   installs 'java'
