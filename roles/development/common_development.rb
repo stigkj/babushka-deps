@@ -13,6 +13,7 @@ dep 'common development' do
            'Docker',
            'JSON tools',
            'CSV tools',
+           'Jetty runner',
            'kafkacat',
            'howdoi'
 end
