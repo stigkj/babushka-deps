@@ -5,7 +5,7 @@ dep 'Gradle' do
 end
 
 dep 'gradle.asdf' do
-  version '4.9'
+	version '4.10.2'
 end
 
 # Gradle wrapper that finds the nearest build.gradle(.kts)
