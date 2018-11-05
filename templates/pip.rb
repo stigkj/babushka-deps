@@ -1,9 +1,11 @@
 # Installs a Python pip
 meta :pip do
+  accepts_value_for :provides, :basename
+
   template do
     requires 'python.asdf'
 
-    met? { in_path? basename }
+    met? { in_path? provides }
     meet {
       log_shell "Installing #{basename}",
                 "pip install #{basename}"
