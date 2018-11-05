@@ -16,5 +16,6 @@ dep 'common development' do
            'GitHub tools',
            'Jetty runner',
            'kafkacat',
+           'Markdown tools',
            'howdoi'
 end
