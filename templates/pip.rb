@@ -16,7 +16,7 @@ meta :pip do
 end
 
 dep 'python.asdf' do
-  requires 'readline.managed',
+  requires 'readline',
            'xz.managed'
 
   version '2.7.15'
