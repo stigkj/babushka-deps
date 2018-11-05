@@ -21,3 +21,5 @@ dep 'python.asdf' do
 
   version '2.7.15'
 end
+dep 'readline.managed'
+dep 'xz.managed'
