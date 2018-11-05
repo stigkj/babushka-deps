@@ -21,5 +21,14 @@ dep 'python.asdf' do
 
   version '2.7.15'
 end
-dep 'readline.managed'
+dep 'readline' do
+  met? { readline_install_dir.exists? }
+  meet {
+    log_shell 'Installing readline',
+              'brew install readline'
+  }
+  def readline_install_dir
+    '/usr/local/opt/readline/lib'.p
+  end
+end
 dep 'xz.managed'
