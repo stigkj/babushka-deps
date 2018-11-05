@@ -6,6 +6,8 @@ meta :cask do
   accepts_value_for :installs, :basename, :choose_with => :via
 
   template {
+    requires Babushka::BrewHelper.manager_dep
+
     met? {
       shell("brew cask info #{installs}").exclude? 'Not installed'
     }
