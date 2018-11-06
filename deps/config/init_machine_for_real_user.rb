@@ -21,8 +21,14 @@ dep 'Init APFS volume for user' do
     shell('diskutil list').include? "APFS Volume #{user_name}"
   }
   meet {
-    log_shell "Init APFS volume for #{user_name}",
-              "diskutil apfs addVolume disk1 'Case-sensitive APFS' #{user_name} -mountpoint /Volumes/#{user_name} -passprompt", :sudo => true
+    log_block "Init APFS volume for #{user_name}" do
+      shell("diskutil apfs addVolume disk1 'Case-sensitive APFS' #{user_name} -mountpoint /Volumes/#{user_name} -passprompt", :sudo => true)
+      shell("fdesetup add -usertoadd #{user_name}", :sudo => true)
+      # ^^ Need to answer some questions with the answers below:
+      # Enter the user name:tmp
+      # Enter the password for user 'tmp':<hidden>
+      # Enter the password for the added user 'stiklepp':<hidden>
+    end
   }
 end
 
