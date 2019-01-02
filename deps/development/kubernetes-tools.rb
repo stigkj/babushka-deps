@@ -33,5 +33,7 @@ end
 # Tail several Kubernetes pods at once
 dep 'stern.managed'
 
+# TODO check out kail for tailing k8s pods
+
 # Kubernetes cluster that runs on xhyve
 dep 'kube-cluster.cask'
