@@ -1,5 +1,5 @@
 user_name = 'stiklepp'
-home_dir = "/Volumes/#{user_name}".p
+home_dir = "/Users/#{user_name}".p
 
 dep 'Init machine for real user' do
   requires 'Create home dir',
@@ -21,14 +21,8 @@ dep 'Init APFS volume for user' do
     shell('diskutil list').include? "APFS Volume #{user_name}"
   }
   meet {
-    log_block "Init APFS volume for #{user_name}" do
-      shell("diskutil apfs addVolume disk1 'Case-sensitive APFS' #{user_name} -mountpoint /Volumes/#{user_name} -passprompt", :sudo => true)
-      shell("fdesetup add -usertoadd #{user_name}", :sudo => true)
-      # ^^ Need to answer some questions with the answers below:
-      # Enter the user name:tmp
-      # Enter the password for user 'tmp':<hidden>
-      # Enter the password for the added user 'stiklepp':<hidden>
-    end
+    log_shell "Init APFS volume for #{user_name}",
+              "diskutil apfs addVolume disk1 'Case-sensitive APFS' #{user_name} -mountpoint /Users/#{user_name} -passprompt", :sudo => true
   }
 end
 
@@ -39,7 +33,7 @@ dep 'Create user' do
   meet {
     log_block "Creating user #{user_name}" do
       password = Babushka::Prompt.get_value("the password", {})
-      shell("sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password #{password} -home /Volumes/#{user_name} -admin", :sudo => true)
+      shell("sysadminctl -addUser #{user_name} -fullName 'Stig Kleppe-Jørgensen' -password #{password} -home /Users/#{user_name} -admin", :sudo => true)
     end
   }
 end
