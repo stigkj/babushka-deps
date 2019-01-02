@@ -1,10 +1,16 @@
 dep 'vim' do
   requires 'vim.managed',
+           'neovim.managed',
            'vimr.cask',
            'vim-plug'
 end
 
 dep 'vim.managed'
+
+# The Neovim cli
+dep 'neovim.managed' do
+  provides 'nvim'
+end
 
 # Nice VIM/Neovim experience in OS X
 dep 'vimr.cask'
@@ -20,4 +26,3 @@ dep 'vim-plug' do
     "#{ENV['HOME']}/.vim/autoload/plug.vim".p
   end
 end
-
