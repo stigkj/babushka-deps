@@ -1,8 +1,8 @@
 dep 'zsh' do
   requires 'zsh.managed',
-           'zplug'
+           'zplug',
            #'zsh-autosuggestions.zplug_plugin',
-           #'zsh-syntax-highlighting.zplug_plugin'
+           'zsh-syntax-highlighting.zplug_plugin'
 end
 
 dep 'zsh.managed'
@@ -14,7 +14,9 @@ dep 'zsh.managed'
 dep 'zsh-autosuggestions.managed'
 
 # Syntax hightlighting of shell commands in zsh
-dep 'zsh-syntax-highlighting.managed'
+dep 'zsh-syntax-highlighting.zplug_plugin' do
+  name 'zdharma/fast-syntax-highlighting'
+end
 
 # TODO might change to these as plugin managers later
 dep 'zgen.managed'
