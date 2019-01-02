@@ -148,6 +148,7 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
   * http://www.darktable.org
   * https://github.com/photo/frontend
   * http://emulsionapp.com/
+  * https://www.picbackman.com/
 * Other software for video streaming besides Popcorn time
   * http://www.tribler.org
 * Music streaming
@@ -202,6 +203,9 @@ CREATE Vagrant-setup with vagrant-babushka and this image: jhcook/osx-yosemite-1
 * What to use for email organizing?
   * http://www.inboxvudu.com
 * What to use for backup/sync?
+  * https://github.com/gilbertchen/duplicacy
+  * http://www.hashbackup.com
+  * https://github.com/duplicati/duplicati
   * https://owncloud.org
   * https://nextcloud.com
   * https://github.com/silverwind/droppy:
