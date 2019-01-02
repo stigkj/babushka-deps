@@ -1,3 +1,3 @@
 dep 'OS X development', :for => :osx do
-  requires 'TablePlus'
+  requires 'Database tools'
 end
