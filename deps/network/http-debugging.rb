@@ -1,5 +1,5 @@
 # HTTP debugging and packet capture & analysis utilities (aka tcpdump for HTTP)
-dep 'http packet capture' do
+dep 'http debugging' do
   requires 'httpflow.managed',
            'charles-beta.cask'
 end
