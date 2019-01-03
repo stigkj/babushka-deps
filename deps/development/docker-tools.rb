@@ -1,5 +1,5 @@
 dep 'Docker tools' do
-  requires 'docker.cask',
+  requires 'docker-edge.cask',
            'docker-sync.gem',
            'ctop.managed',
            'dry',
@@ -7,7 +7,7 @@ dep 'Docker tools' do
            'kitematic.cask'
 end
 
-dep 'docker.cask'
+dep 'docker-edge.cask'
 
 # Improves docker for development
 dep 'docker-sync.gem'
@@ -23,7 +23,6 @@ dep 'dry' do
   requires 'homebrew tap'.with('moncho/dry'),
            'dry.managed'
 end
-
 dep 'dry.managed'
 
 # Stats collector for Docker layers
