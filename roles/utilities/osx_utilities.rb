@@ -2,11 +2,12 @@ dep 'OS X utilities', :for => :osx do
   requires '1Password',
            'Alfred',
            'Amphetamine',
-           'Display Menu',
            'Appcleaner',
            'Choosy',
-           'Keybase',
-           'File managers',
+           'Display Menu',
            'Fantastical',
-           'iTerm2'
+           'File managers',
+           'Grammarly',
+           'iTerm2',
+           'Keybase'
 end
