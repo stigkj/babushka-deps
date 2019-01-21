@@ -5,7 +5,9 @@ dep 'Rename tools' do
 end
 
 # Several tools for renaming files from a text editor
-dep 'renameutils.managed'
+dep 'renameutils.managed' do
+  provides 'qmv'
+end
 
 #  Nice tool for renaming files through an text editor
 dep 'massren.managed'
