@@ -4,5 +4,6 @@ dep 'OS X media', :for => :osx do
            'Image optimization',
            'Pixelmator',
            'Snapselect',
+           'Spotify',
            'Printer drivers'
 end
