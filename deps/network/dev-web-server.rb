@@ -6,4 +6,5 @@ end
 # * slinky (https://github.com/mwylde/slinky)
 # * reloadify (https://github.com/alessioalex/reloadify)
 # * local-web-server (https://github.com/lwsjs/local-web-server)
+# * serve (https://github.com/syntaqx/serve)
 dep 'devd.managed'
