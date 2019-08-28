@@ -9,6 +9,9 @@
 # https://github.com/rcruzper/dps
 # https://github.com/hikouki/docin
 # https://gist.github.com/chaudum/baa1f4981f30733e12acc21379cf3151 (search history with CTRL-R)
+
+# TODO let fzf show directory contents when ctrl-r
+# TODO look at fzf wiki
 dep 'Fuzzy list lookup' do
   requires 'fzf',
            'fzy.managed'
