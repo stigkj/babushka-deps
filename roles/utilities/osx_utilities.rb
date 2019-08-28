@@ -4,7 +4,7 @@ dep 'OS X utilities', :for => :osx do
            'Amphetamine',
            'Appcleaner',
            'Choosy',
-           'Display Menu',
+           'EasyRes',
            'Fantastical',
            'File managers',
            'Grammarly',
