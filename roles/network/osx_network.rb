@@ -3,5 +3,5 @@ dep 'OS X network', :for => :osx do
            'Browsers',
            'Mail client',
            'Slack',
-           'ngrok'
+           'localhost-tunneling'
 end
