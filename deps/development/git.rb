@@ -12,6 +12,8 @@ dep 'git' do
            'diff-so-fancy.managed'
 end
 
+# TODO look at https://github.com/hankchanocd/git-overview
+
 dep 'git.managed'
 
 # Nice GUI for git
