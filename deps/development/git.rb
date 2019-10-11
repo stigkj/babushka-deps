@@ -67,10 +67,12 @@ dep 'git-cal.managed'
 # Shows a GitHub-like contributions calendar, but locally, with all your git commits
 dep 'git-stats.npm'
 
-# Make the git diff fancier
+# A couple of tools for making the diff easier to read
 dep 'diff-so-fancy.managed' do
   after {
     log_shell "Installing #{basename} into git config",
               %(git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX --pattern '^(Date|added|deleted|modified): '")
   }
 end
+# TODO integrate this properly, look at https://github.com/mookid/diffr
+dep 'diffr.managed'
