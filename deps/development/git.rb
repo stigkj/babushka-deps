@@ -1,7 +1,7 @@
 dep 'git' do
   requires 'git.managed',
            'gitup.cask',
-           'sublime-merge.cask',
+           'fork.cask',
            'tig.managed',
            'git hooks',
            'git-up',
@@ -21,6 +21,9 @@ dep 'gitup.cask'
 
 # Another nice GUI for git
 dep 'sublime-merge.cask'
+
+# Seems like a VERY good GUI for git
+dep 'fork.cask'
 
 # Nice terminal GUI for git
 dep 'tig.managed'
