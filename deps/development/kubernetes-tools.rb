@@ -31,6 +31,7 @@ end
 dep 'k9s.managed'
 
 # Utility for switching between Kubernetes namespaces and contexts easily
+# TODO also look at https://github.com/shyiko/kubensx
 dep 'kubectx.binary' do
   met? { in_path? 'kctx' }
   meet {
