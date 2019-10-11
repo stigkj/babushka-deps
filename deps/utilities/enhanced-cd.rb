@@ -12,3 +12,5 @@ end
 
 # TODO look at including fasd too which has some more features
 dep 'fasd.managed'
+
+# TODO also look at https://github.com/shyiko/commacd
