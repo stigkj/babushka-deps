@@ -70,7 +70,7 @@ dep 'git-cal.managed'
 # Shows a GitHub-like contributions calendar, but locally, with all your git commits
 dep 'git-stats.npm'
 
-# A couple of tools for making the diff easier to read
+# A couple of tools for making the diff easier to read, it seems delta is the best
 dep 'diff-so-fancy.managed' do
   after {
     log_shell "Installing #{basename} into git config",
@@ -79,3 +79,5 @@ dep 'diff-so-fancy.managed' do
 end
 # TODO integrate this properly, look at https://github.com/mookid/diffr
 dep 'diffr.managed'
+# TODO integrate this properly, look at https://github.com/dandavison/delta
+dep 'delta.managed'
