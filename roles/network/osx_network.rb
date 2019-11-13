@@ -1,5 +1,5 @@
 dep 'OS X network', :for => :osx do
-  requires 'Pulse Secure',
+  requires 'VPN clients',
            'Browsers',
            'Mail client',
            'Slack',

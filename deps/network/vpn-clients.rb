@@ -1,5 +1,6 @@
 dep 'VPN clients' do
-  requires 'tunnelblick.cask'
+  requires 'tunnelblick.cask',
+           'Pulse Secure'
 end
 
 # OpenVPN client
@@ -7,6 +8,13 @@ dep 'tunnelblick.cask'
 
 # Easy and free VPN
 dep 'tunnelbear.cask'
+
+# A dead simple VPN with no setup, just a shared secret (see https://github.com/jedisct1/dsvpn#secret-key)
+dep 'DSVPN' do
+  requires 'homebrew tap'.with('nnathan/dsvpn'),
+           'dsvpn.managed'
+end
+dep 'dsvpn.managed'
 
 dep 'Pulse Secure' do
   requires 'PulseSecure.installer',
