@@ -2,7 +2,7 @@
 dep 'init' do
   requires 'Check HD is in case-sensitive encrypted APFS format',
            'Init machine for real user',
-           'Dropbox',
+           'Telia Sky',
            'mackup',
            'Setup ssh'
 end

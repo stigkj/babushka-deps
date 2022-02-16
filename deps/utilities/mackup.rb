@@ -1,5 +1,5 @@
 dep 'mackup' do
-  requires 'Dropbox',
+  requires 'Telia Sky',
            'Install mackup with easy_install',
            'Create the XDG .config directory',
            'Mackup restore must run before continuing'
