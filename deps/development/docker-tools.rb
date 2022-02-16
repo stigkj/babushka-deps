@@ -60,3 +60,4 @@ dep 'dive.go'
 
 # TODO create a docker plugin for asdf, for versioning of docker clients, or use https://github.com/howtowhale/dvm
 # TODO look at http://dockersl.im - minify and secure your Docker containers
+# TODO look at https://github.com/genuinetools/reg - cli for Docker registry
