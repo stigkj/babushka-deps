@@ -53,3 +53,5 @@ dep 'popeye.managed'
 
 # Kubernetes cluster that runs on xhyve
 dep 'kube-cluster.cask'
+ 
+# TODO look at https://github.com/sbstp/kubie - context/namespace/prompt stuff
