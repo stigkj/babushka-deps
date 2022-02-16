@@ -23,3 +23,5 @@ dep 'jl.managed'
 
 # TODO install xml2json converter: https://github.com/hidu/xml2json
 dep 'xml2json.go'
+
+# TODO Look at https://github.com/sclevine/yj
