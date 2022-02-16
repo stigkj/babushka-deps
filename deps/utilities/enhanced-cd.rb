@@ -14,3 +14,4 @@ end
 dep 'fasd.managed'
 
 # TODO also look at https://github.com/shyiko/commacd
+# TODO also look at https://github.com/skywind3000/z.lua
