@@ -10,7 +10,7 @@ install_babushka() {
   echo "Installing babushka..."
   echo ""
 
-  sudo sh -c "`curl https://babushka.me/up`" < /dev/null
+  VERSION=274ed59a sh -c "`curl https://babushka.me/up`" < /dev/null
 }
 
 install_babushka_if_missing() {
