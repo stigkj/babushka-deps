@@ -1,8 +1,8 @@
 dep 'Java' do
   requires 'java.cask',
            'java8.asdf',
-           'java10.asdf',
-           'java11.asdf'
+           'java11.asdf',
+           'java17.asdf'
 end
 
 # OS X needs a regularly installed jdk also
@@ -13,12 +13,12 @@ dep 'java8.asdf' do
   version '8'
 end
 
-dep 'java10.asdf' do
+dep 'java11.asdf' do
   installs 'java'
-  version '10'
+  version '11'
 end
 
-dep 'java11.asdf' do
+dep 'java17.asdf' do
   installs 'java'
   version '11'
 end

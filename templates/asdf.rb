@@ -21,7 +21,7 @@ dep 'asdf installer' do
   met? { asdf_home.exists? }
   meet {
     log_block 'Installing asdf into ~/.asdf' do
-      shell("git clone https://github.com/asdf-vm/asdf #{asdf_home} --branch v0.6.0")
+      shell("git clone https://github.com/asdf-vm/asdf #{asdf_home} --branch v0.9.0")
     end
   }
 

@@ -1,14 +1,13 @@
 dep 'common utilities' do
   # TODO install into Utilities dir
   requires 'zsh',
-           'cheat',
+           'Cheatsheet tools',
            'Enhanced cd',
            'Fuzzy list lookup',
            'direnv',
-           'codemod',
            'prez',
            'proctools',
-           'Search tools',
+           'Search & replace tools',
            'Beyond Compare',
            'Evernote',
            'Alternote',

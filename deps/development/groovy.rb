@@ -1,6 +1,9 @@
 dep 'Groovy' do
-  requires 'groovy.managed'
+  requires 'groovy.asdf'
 end
 
-# TODO create a asdf plugin instead
-dep 'groovy.managed'
+dep 'groovy.asdf' do
+  installs 'groovy'
+  version '3.0.9'
+end
+

@@ -17,7 +17,7 @@ module Babushka
     #   }
     #
     # This will call "unmeetable!" on the dep if the platform matches,
-    # and will have a predifined error message.
+    # and will have a predefined error message.
     def unsupported_platform!
       file, line = owner.source_location
       owner.unmeetable! <<-END.gsub(/ {8}/, '')

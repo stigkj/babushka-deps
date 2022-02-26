@@ -1,9 +1,9 @@
 dep 'Kubernetes tools' do
   requires 'Kubernetes CLI',
-           'k9s',
+           'k9s.managed',
            'kubectx.binary',
            'stern.managed',
-           'popeye'
+           'popeye.managed'
 end
 
 # A cli (kubectl) for kubernetes
@@ -24,11 +24,9 @@ dep 'kubernetes-cli.shell_config_ext' do
     EOF
 end
 
-dep 'k9s' do
-  requires 'homebrew tap'.with('derailed/k9s'),
-           'k9s.managed'
+dep 'k9s.managed' do
+  installs 'derailed/k9s/k9s'
 end
-dep 'k9s.managed'
 
 # Utility for switching between Kubernetes namespaces and contexts easily
 # TODO also look at https://github.com/shyiko/kubensx
@@ -44,11 +42,9 @@ dep 'stern.managed'
 
 # TODO check out kail for tailing k8s pods
 
-dep 'popeye' do
-  requires 'homebrew tap'.with('derailed/popeye'),
-           'popeye.managed'
+dep 'popeye.managed' do
+  installs 'derailed/popeye/popeye'
 end
-dep 'popeye.managed'
 
 
 # Kubernetes cluster that runs on xhyve

@@ -18,9 +18,6 @@ dep 'massren.managed'
 # https://github.com/WindomZ/uniname
 
 # TODO this did not build last time I tried
-dep 'rnm' do
-  requires 'homebrew tap'.with('neurobin/pkg'),
-           'rnm.managed'
+dep 'rnm.managed' do
+  installs 'neurobin/pkg/rnm'
 end
-
-dep 'rnm.managed'

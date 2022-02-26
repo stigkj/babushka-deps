@@ -1,8 +1,7 @@
 dep 'Docker tools' do
   requires 'docker-edge.cask',
-           'docker-sync.gem',
            'ctop.managed',
-           'dry',
+           'dry.managed',
            'dlayer.go',
            'kitematic.cask'
 end
@@ -19,11 +18,9 @@ dep 'dinghy.managed'
 dep 'ctop.managed'
 
 # A console gui for working with docker
-dep 'dry' do
-  requires 'homebrew tap'.with('moncho/dry'),
-           'dry.managed'
+dep 'dry.managed' do
+  installs 'moncho/dry/dry'
 end
-dep 'dry.managed'
 
 # Stats collector for Docker layers
 dep 'dlayer.go' do
