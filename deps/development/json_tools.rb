@@ -19,6 +19,9 @@ dep 'jl.managed' do
   installs 'koenbollen/public/jl'
 end
 
+# A command-line JSON viewer designed for reading, exploring, and searching through JSON data
+dep 'jless.managed'
+
 # TODO install xml2json converter: https://github.com/hidu/xml2json
 dep 'xml2json.go'
 
