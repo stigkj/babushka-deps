@@ -8,7 +8,7 @@ dep 'Check HD is in case-sensitive encrypted APFS format' do
   }
 
   def is_casesensitive_apfs
-    shell('diskutil info / || echo error') =~ /File System Personality:.*Case-sensitive APFS/ &&
+    shell('diskutil info /System/Volumes/Data || echo error') =~ /File System Personality:.*Case-sensitive APFS/ &&
         casesensitive_apfs_check_cache_file.touch
   end
 
