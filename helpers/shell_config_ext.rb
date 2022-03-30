@@ -6,7 +6,7 @@ meta :shell_config_ext do
   template {
     requires 'zplug'
 
-    met? { local_file.exists? }
+    met? { local_file.exists? && local_file.read == content }
     meet {
       log_block "Creating zsh config file for #{application} (#{local_file})" do
         local_file.write content
