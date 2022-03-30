@@ -73,5 +73,11 @@ dep 'diff-so-fancy.managed' do
 end
 # TODO integrate this properly, look at https://github.com/mookid/diffr
 dep 'diffr.managed'
+
 # TODO integrate this properly, look at https://github.com/dandavison/delta
-dep 'delta.managed'
+dep 'delta.managed' do
+  after {
+    log_shell "Installing #{basename} into git config",
+              %(git config --global core.pager delta)
+  }
+end
