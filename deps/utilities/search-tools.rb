@@ -1,6 +1,6 @@
 dep 'Search tools' do
   requires 'ripgrep.managed',
-	       'fd.managed'
+           'fd.managed'
 end
 
 
