@@ -44,9 +44,5 @@ dep 'stern.managed'
 dep 'popeye.managed' do
   installs 'derailed/popeye/popeye'
 end
-
-
-# Kubernetes cluster that runs on xhyve
-dep 'kube-cluster.cask'
  
 # TODO look at https://github.com/sbstp/kubie - context/namespace/prompt stuff
