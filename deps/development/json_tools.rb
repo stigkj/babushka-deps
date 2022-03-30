@@ -2,7 +2,8 @@ dep 'JSON tools' do
   requires 'jq.managed',
            'jid.managed',
            'gron.managed',
-           'jl.managed'
+           'jl.managed',
+           'jless.managed'
 end
 
 # A lightweight and flexibl e command-line JSON processor
