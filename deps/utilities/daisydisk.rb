@@ -1,14 +1,11 @@
 # A nice disk usage visualization tool
 dep 'DaisyDisk' do
-  requires 'DaisyDisk must be installed from App Store before resuming',
+  requires 'DaisyDisk.mas',
            'daisydisk.cask'
 end
 
-dep 'DaisyDisk must be installed from App Store before resuming' do
-  met? { '/Applications/DaisyDisk.app'.p.exists? }
-  meet {
-    Babushka::Prompt.confirm('Install DaisyDisk from App Store before resuming', :default => 'y')
-  }
+dep 'DaisyDisk.mas' do
+  id '411643860'
 end
 
 dep 'daisydisk.cask'
