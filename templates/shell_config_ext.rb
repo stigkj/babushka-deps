@@ -11,6 +11,7 @@ meta :shell_config_ext do
       log_block "Creating zsh config file for #{application} (#{local_file})" do
         local_file.write content
       end
+      #after { unmeetable! 'TODO fix this --> must load new zsh file by starting new shell' }
     }
   }
 

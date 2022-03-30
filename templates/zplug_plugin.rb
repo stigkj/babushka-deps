@@ -14,6 +14,7 @@ meta :zplug_plugin do
       log_block "Install zplug plugin #{name} for #{application}" do
         packages_file.append plugin_config
       end
+      #unmeetable! 'TODO fix this --> Must install plugin with zplug install'
     }
   }
 
