@@ -3,4 +3,6 @@ dep 'safe' do
   requires 'safe.managed'
 end
 
-dep 'safe.managed'
+dep 'safe.managed' do
+  installs 'starkandwayne/cf/safe'
+end
