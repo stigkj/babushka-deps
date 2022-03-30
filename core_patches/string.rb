@@ -5,8 +5,4 @@ class ::String
   def unindent
     gsub /^#{self[/\A\s*/]}/, ''
   end
-
-  def exclude?(string)
-    !include?(string)
-  end
 end
