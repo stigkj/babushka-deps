@@ -9,7 +9,9 @@ meta :cask do
     requires Babushka::BrewHelper.manager_dep
 
     met? {
-      shell("brew info --cask #{installs}").exclude? 'Not installed'
+      shell("brew info --cask #{installs}", :log => false) {|shell|
+        !(shell.stdout + shell.stderr).match? /Not installed|unavailable/
+      }
     }
     meet {
       log_shell "Installing #{installs}",
