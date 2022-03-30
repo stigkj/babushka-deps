@@ -5,12 +5,15 @@
 # - Airmail
 # - etc...
 dep 'Mail client' do
-  requires 'Mailplane'
+  requires 'Mailplane',
+           'mimestream.cask'
 end
 
 dep 'Mailplane' do
   requires 'mailplane.cask'
 end
+
+dep 'mimestream.cask'
 
 dep 'Spark' do
   requires 'Spark.mas'
