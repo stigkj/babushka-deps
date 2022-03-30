@@ -1,6 +1,10 @@
 dep 'VPN clients' do
-  requires 'tunnelblick.cask',
-           'appgate-sdp-client.managed'
+  requires 'Appgate SDP.installer'
+end
+
+dep 'Appgate SDP.installer' do
+  source 'https://bin.appgate-sdp.com/5.5/client/Appgate-SDP-5.5.3-Installer.dmg'
+  met? { '/Applications/AppGate SDP.app'.p.exists? }
 end
 
 # OpenVPN client
@@ -13,5 +17,3 @@ dep 'tunnelbear.cask'
 dep 'dsvpn.managed' do
   installs 'nnathan/dsvpn/dsvpn'
 end
-
-dep 'appgate-sdp-client.managed'
