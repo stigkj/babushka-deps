@@ -5,9 +5,6 @@ dep '1Password' do
   }
 end
 
-# TODO install license automatically?
-# It is located in ~/Telia Sky/Software/Licences/
-
 dep '1password.cask', :for => :osx do
   after {
     Process.spawn "open /Applications/1Password*.app"
