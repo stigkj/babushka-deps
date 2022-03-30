@@ -1,13 +1,13 @@
 dep 'Node.js' do
   requires 'nodejs.asdf',
-           'yarn.binary'
+           'yarn.asdf'
 end
 
 dep 'nodejs.asdf' do
   requires 'coreutils.managed',
            'gnupg.managed'
 
-  version '9.11.2'
+  version '17.8.0'
 end
 dep 'coreutils.managed' do
   provides 'gcat'
@@ -16,14 +16,8 @@ dep 'gnupg.managed' do
   provides 'gpg'
 end
 
-dep 'yarn.binary' do
-  requires 'nodejs.asdf'
-
-  met? { in_path? 'yarn' }
-  meet {
-    log_shell 'Installing yarn without nodejs',
-              'brew install yarn --without-node'
-  }
+dep 'yarn.asdf' do
+  version '1.22.18'
 end
 
 # TODO Cannot be done like this anymore as node is now installed through asdf. Disable for now.
