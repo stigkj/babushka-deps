@@ -7,7 +7,7 @@ I use [Babushka](http://babushka.me) to automate the setup of my OS X machine.
 When starting from scratch on a new machine with only OS X installed, run this:
 
 ```
-sh -c "`curl https://raw.githubusercontent.com/stigkj/babushka-deps/master/init.sh`"
+sh -c "`curl https://raw.githubusercontent.com/stigkj/babushka-deps/master/setup.sh`"
 ```
 
 ## Update an existing machine
