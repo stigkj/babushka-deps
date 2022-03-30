@@ -5,6 +5,7 @@ end
 
 dep 'Telia Sky.app' do
   source 'https://sky.telia.no/update/get/current/get.dmg'
+  provides 'get.app'
 end
 
 dep 'Telia Sky must be initialized before continuing' do
