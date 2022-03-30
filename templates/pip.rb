@@ -16,19 +16,5 @@ meta :pip do
 end
 
 dep 'python.asdf' do
-  requires 'readline',
-           'xz.managed'
-
-  version '2.7.15'
+  version '3.10.4'
 end
-dep 'readline' do
-  met? { readline_install_dir.exists? }
-  meet {
-    log_shell 'Installing readline',
-              'brew install readline'
-  }
-  def readline_install_dir
-    '/usr/local/opt/readline/lib'.p
-  end
-end
-dep 'xz.managed'
