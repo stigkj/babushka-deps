@@ -34,6 +34,6 @@ dep 'asdf.shell_config_ext' do
   content <<-EOF.unindent
       asdf_dir=~/.asdf
 
-      zplug "stigkj/asdf.plugin.zsh", defer:2
+      zplug "kiurchv/asdf.plugin.zsh", defer:2
     EOF
 end
