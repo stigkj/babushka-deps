@@ -1,10 +1,13 @@
 dep 'Docker tools' do
-  requires 'docker-edge.cask',
-           'ctop.managed',
-           'dry.managed',
+  requires 'ctop.managed',
+           'dive.managed',
+           'Docker.app',
+           'dry.managed'
 end
 
-dep 'docker-edge.cask'
+dep 'Docker.app' do
+  source 'https://desktop.docker.com/mac/main/arm64/Docker.dmg'
+end
 
 # Improves docker for development
 dep 'docker-sync.gem'
@@ -20,10 +23,8 @@ dep 'dry.managed' do
   installs 'moncho/dry/dry'
 end
 
-# Stats collector for Docker layers
-dep 'dlayer.go' do
-  github 'wercker/dlayer'
-end
+# A console gui for exploring the layers of a Docker image
+dep 'dive.managed'
 
 # GUI for managing docker images and containers
 dep 'kitematic.cask'
@@ -46,10 +47,6 @@ dep 'wharfee.pip'
 # A console gui for managing Docker containers and services
 # TODO setup correctly
 dep 'dockly.npm'
-
-# A console gui for exploring the layers of a Docker image
-# TODO setup installation correctly, see https://github.com/wagoodman/dive
-dep 'dive.go'
 
 # TODO look at https://github.com/shyiko/dockry
 
