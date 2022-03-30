@@ -8,6 +8,10 @@ readonly ARGS="$@"
 install_babushka() {
   echo ""
   echo "Installing babushka..."
+
+  echo "  creating installation directories for babushka (need sudo)..."
+  sudo mkdir -p /usr/local/babushka
+  sudo mkdir -p /usr/local/bin
   echo ""
 
   REPO=https://github.com/stigkj/babushka.git VERSION=master sh -c "`curl https://babushka.me/up`" < /dev/null
