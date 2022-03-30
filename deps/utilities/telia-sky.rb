@@ -9,9 +9,8 @@ dep 'Telia Sky.app' do
 end
 
 dep 'Telia Sky must be initialized before continuing' do
-  met? { '~/Telia Sky'.p.exists? }
+  met? { "#{ENV['HOME']}/Telia Sky".p.exists? }
   meet {
-    Process.spawn('open /Applications/Telia Sky.app')
     Babushka::Prompt.confirm('Log into Telia Sky, and wait for the Telia Sky folder to be created and synced before pressing enter', :default => 'y')
   }
 end
