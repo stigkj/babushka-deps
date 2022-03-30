@@ -1,7 +1,8 @@
 # Tools that shows cheat sheets
 dep 'Cheatsheet tools' do
-  requires 'cheat.pip',
-           'cheatsheet.cask'
+  requires 'cheat.managed',
+           'cheatsheet.cask',
+           'navi.managed'
 end
 
 # An interactive cheat sheet tool for the command-line
@@ -10,7 +11,7 @@ end
 dep 'navi.managed'
 
 # View interactive cheat sheets on the command line
-dep 'cheat.pip'
+dep 'cheat.managed'
 
 # Show all keyboard shortcuts for the current application
 dep 'cheatsheet.cask'
