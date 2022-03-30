@@ -1,11 +1,11 @@
-# TODO look at
-# https://github.com/gicmo/dot-zsh/blob/master/plugins/iterm2.zplug
 dep 'iTerm2' do
-  requires 'iterm2-nightly.cask',
+  requires 'iterm2-beta.cask',
            'iterm2.shell_config_ext'
 end
 
-dep 'iterm2-nightly.cask'
+dep 'iterm2-beta.cask' do
+  installs 'homebrew/cask-versions/iterm2-beta'
+end
 
 dep 'iterm2.shell_config_ext' do
   content <<-EOF.unindent
