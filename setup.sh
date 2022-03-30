@@ -10,7 +10,7 @@ install_babushka() {
   echo "Installing babushka..."
   echo ""
 
-  VERSION=274ed59a sh -c "`curl https://babushka.me/up`" < /dev/null
+  REPO=https://github.com/stigkj/babushka.git VERSION=master sh -c "`curl https://babushka.me/up`" < /dev/null
 }
 
 install_babushka_if_missing() {
