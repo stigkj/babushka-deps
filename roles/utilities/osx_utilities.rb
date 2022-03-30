@@ -1,6 +1,7 @@
 dep 'OS X utilities', :for => :osx do
   requires '1Password',
-           'Alfred',
+           'Raycast',
+           'TickTick',
            'Amphetamine',
            'Appcleaner',
            'Choosy',

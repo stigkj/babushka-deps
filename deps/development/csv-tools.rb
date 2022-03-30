@@ -1,7 +1,6 @@
 # Nice csv tools
 dep 'CSV tools' do
-  requires 'q.managed',
-           'xsv.managed',
+  requires 'xsv.managed',
            'csvkit.pip'
 end
 

@@ -1,7 +1,6 @@
 dep 'Kubernetes tools' do
   requires 'Kubernetes CLI',
            'k9s.managed',
-           'kubectx.binary',
            'stern.managed',
            'popeye.managed'
 end

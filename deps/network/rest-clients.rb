@@ -1,6 +1,5 @@
 dep 'REST clients' do
-  requires 'Paw',
-           'insomnia.cask'
+  requires 'Paw'
 end
 
 # Nice REST client

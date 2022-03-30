@@ -2,8 +2,6 @@ dep 'Docker tools' do
   requires 'docker-edge.cask',
            'ctop.managed',
            'dry.managed',
-           'dlayer.go',
-           'kitematic.cask'
 end
 
 dep 'docker-edge.cask'

@@ -1,7 +1,7 @@
 dep 'OS X network', :for => :osx do
-  requires 'VPN clients',
-           'Browsers',
+  requires 'Browsers',
            'Mail client',
            'Slack',
+           'VPN clients',
            'localhost-tunneling'
 end

@@ -7,9 +7,7 @@
 # http://midnight-commander.org/
 # https://godoc.org/github.com/gokcehan/lf
 dep 'File managers' do
-  requires 'fman.cask',
-           'nnn.managed',
-           'forklift.cask'
+  requires 'nnn.managed'
 end
 
 # A very fast console file manager

@@ -13,8 +13,7 @@
 # TODO let fzf show directory contents when ctrl-r
 # TODO look at fzf wiki
 dep 'Fuzzy list lookup' do
-  requires 'fzf',
-           'fzy.managed'
+  requires 'fzf'
 end
 
 # A very fast command-line fuzzy finder

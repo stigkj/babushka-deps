@@ -1,15 +1,9 @@
 dep 'git' do
   requires 'git.managed',
            'gitup.cask',
-           'fork.cask',
            'tig.managed',
            'git hooks',
-           'git-up',
-           'git-run.npm',
-           'git-sweep.pip',
-           'git-cal.managed',
-           'git-stats.npm',
-           'diff-so-fancy.managed'
+           'delta.managed'
 end
 
 # TODO look at https://github.com/hankchanocd/git-overview

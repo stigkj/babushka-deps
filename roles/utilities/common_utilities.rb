@@ -5,12 +5,11 @@ dep 'common utilities' do
            'Enhanced cd',
            'Fuzzy list lookup',
            'direnv',
-           'prez',
            'proctools',
+           'Search tools',
            'Search & replace tools',
            'Beyond Compare',
            'Evernote',
-           'Alternote',
            'Sublime Text',
            'vim'
 end
